@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hamenyimana Gerald - Professional IT Portfolio">
+<meta name="description" content="Professional IT Portfolio of Hamenyimana Gerald">
 <title>Hamenyimana Gerald | Professional IT Portfolio</title>
 
 <style>
@@ -15,9 +15,8 @@
   --green:#087e61;
   --text:#17334d;
 }
-
-* { box-sizing:border-box; }
-
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
 body {
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
@@ -25,555 +24,249 @@ body {
   background:#e8f1fb;
   line-height:1.7;
 }
-
-[hidden] { display:none!important; }
-
-a { color:#115a95; }
-button,input,textarea { font:inherit; }
-a,button { transition:.2s ease; }
-
+[hidden] {display:none!important}
+a {color:#115a95}
+button,input,textarea {font:inherit}
+a,button {transition:.2s ease}
 a:focus-visible,button:focus-visible {
   outline:3px solid #edaa32;
   outline-offset:3px;
 }
-
 header {
   background:linear-gradient(110deg,#fff,#e6f2ff);
   border-bottom:4px solid var(--gold);
   padding:18px 6%;
 }
-
-.brand {
-  display:flex;
-  align-items:center;
-  gap:15px;
-  margin-bottom:18px;
-}
-
+.brand {display:flex;align-items:center;gap:15px;margin-bottom:18px}
 .logo {
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  background:var(--navy);
-  color:var(--gold);
+  width:60px;height:60px;border-radius:50%;
+  background:var(--navy);color:var(--gold);
   border:3px solid var(--gold);
-  display:grid;
-  place-items:center;
-  font-size:24px;
-  font-weight:bold;
-  flex-shrink:0;
+  display:grid;place-items:center;
+  font-size:24px;font-weight:bold;flex-shrink:0;
 }
-
-.brand h1 {
-  margin:0;
-  color:var(--navy);
-  font-size:22px;
-}
-
-.brand p {
-  margin:0;
-  font-size:12px;
-  color:#61758a;
-  letter-spacing:2px;
-}
-
-nav {
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
-}
-
+.brand h1 {margin:0;color:var(--navy);font-size:22px}
+.brand p {margin:0;font-size:12px;color:#61758a;letter-spacing:2px}
+nav {display:flex;flex-wrap:wrap;gap:9px}
 nav a {
-  background:#d5e9ff;
-  color:#123c60;
-  text-decoration:none;
-  padding:9px 14px;
-  border-radius:9px;
-  font-size:12px;
-  font-weight:bold;
+  background:#d5e9ff;color:#123c60;
+  text-decoration:none;padding:9px 14px;
+  border-radius:9px;font-size:12px;font-weight:bold;
   border:1px solid #aacded;
 }
-
-nav a:hover,nav a.active {
-  background:var(--navy);
-  color:white;
-}
-
+nav a:hover,nav a.active {background:var(--navy);color:white}
 .hero {
   background:linear-gradient(120deg,#081c34,#17649e);
-  color:white;
-  padding:75px 7%;
+  color:white;padding:75px 7%;
 }
-
 .hero-inner {
-  max-width:1150px;
-  margin:auto;
-  display:grid;
+  max-width:1150px;margin:auto;display:grid;
   grid-template-columns:1.5fr 1fr;
-  align-items:center;
-  gap:45px;
+  align-items:center;gap:45px;
 }
-
 .hero h2 {
   font-size:clamp(36px,5vw,60px);
-  line-height:1.15;
-  color:white;
-  margin:15px 0;
+  line-height:1.15;color:white;margin:15px 0;
 }
-
-.hero h2 span { color:var(--gold); }
-
-.hero p {
-  font-size:17px;
-  color:#e8f3ff;
-}
-
-.eyebrow {
-  color:var(--gold);
-  letter-spacing:2px;
-  font-weight:bold;
-  font-size:13px;
-}
-
+.hero h2 span {color:var(--gold)}
+.hero p {font-size:17px;color:#e8f3ff}
+.eyebrow {color:var(--gold);letter-spacing:2px;font-weight:bold;font-size:13px}
 .profile-photo {
-  width:100%;
-  max-width:350px;
-  height:410px;
-  object-fit:cover;
-  object-position:center 25%;
-  border:5px solid var(--gold);
-  border-radius:22px;
-  display:block;
-  margin:auto;
-  box-shadow:0 18px 40px #0005;
+  width:100%;max-width:350px;height:410px;
+  object-fit:cover;object-position:center 25%;
+  border:5px solid var(--gold);border-radius:22px;
+  display:block;margin:auto;box-shadow:0 18px 40px #0005;
 }
-
-.hero-tags {
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
-  margin:20px 0;
-}
-
+.hero-tags {display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}
 .hero-tags span {
-  background:#285e85;
-  color:white;
-  border-radius:30px;
-  padding:6px 13px;
-  font-size:12px;
+  background:#285e85;color:white;border-radius:30px;
+  padding:6px 13px;font-size:12px;
 }
-
 .btn,.back-home {
-  display:inline-block;
-  background:var(--gold);
-  color:var(--navy);
-  padding:12px 20px;
-  border:0;
-  border-radius:9px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:7px 7px 7px 0;
-  cursor:pointer;
+  display:inline-block;background:var(--gold);
+  color:var(--navy);padding:12px 20px;
+  border:0;border-radius:9px;text-decoration:none;
+  font-weight:bold;margin:7px 7px 7px 0;cursor:pointer;
 }
-
-.btn.blue { background:#17649e;color:white; }
-.btn.green { background:#087e61;color:white; }
-.btn.purple { background:#7652aa;color:white; }
-
-.btn:hover,.back-home:hover {
-  filter:brightness(.9);
-  transform:translateY(-2px);
-}
-
-.back-home {
-  background:var(--navy);
-  color:white;
-  margin-top:35px;
-}
-
-.banner {
-  text-align:center;
-  padding:55px 7%;
-  color:white;
-}
-
-.banner h2 {
-  color:white;
-  font-size:clamp(30px,5vw,46px);
-  margin:0;
-}
-
-.banner p {
-  color:#edf6ff;
-  margin:8px 0;
-}
-
-main {
-  max-width:1120px;
-  margin:auto;
-  padding:45px 20px 80px;
-  min-height:45vh;
-}
-
+.btn.blue {background:#17649e;color:white}
+.btn.green {background:#087e61;color:white}
+.btn.purple {background:#7652aa;color:white}
+.btn:hover,.back-home:hover {filter:brightness(.9);transform:translateY(-2px)}
+.back-home {background:var(--navy);color:white;margin-top:35px}
+.banner {text-align:center;padding:55px 7%;color:white}
+.banner h2 {color:white;font-size:clamp(30px,5vw,46px);margin:0}
+.banner p {color:#edf6ff;margin:8px 0}
+main {max-width:1120px;margin:auto;padding:45px 20px 80px;min-height:45vh}
 .section-heading {
-  color:#103657;
-  background:#c6dff6;
-  border-left:7px solid #2868ae;
-  padding:13px 19px;
-  border-radius:11px;
-  margin:38px 0 18px;
+  color:#103657;background:#c6dff6;
+  border-left:7px solid #2868ae;padding:13px 19px;
+  border-radius:11px;margin:38px 0 18px;
 }
-
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-  margin-top:22px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;margin-top:22px;
 }
-
 .card {
-  padding:25px;
-  border-radius:16px;
-  background:#dceaff;
-  border:2px solid #b5d0f1;
-  border-left:7px solid #2868ae;
-  box-shadow:0 8px 22px #102e5018;
-  overflow-wrap:anywhere;
+  padding:25px;border-radius:16px;background:#dceaff;
+  border:2px solid #b5d0f1;border-left:7px solid #2868ae;
+  box-shadow:0 8px 22px #102e5018;overflow-wrap:anywhere;
 }
-
-.card h3 { margin:0 0 10px;color:#103b63; }
-.card p { margin:9px 0; }
-
-.grid>.card:nth-child(5n+1) {
-  background:#dceaff;
-  border-left-color:#2868ae;
-}
-
-.grid>.card:nth-child(5n+2) {
-  background:#e9ddfa;
-  border-left-color:#8052b8;
-}
-
-.grid>.card:nth-child(5n+3) {
-  background:#ffedc8;
-  border-left-color:#bd8725;
-}
-
-.grid>.card:nth-child(5n+4) {
-  background:#d2f0e6;
-  border-left-color:#168a76;
-}
-
-.grid>.card:nth-child(5n+5) {
-  background:#ffdee8;
-  border-left-color:#ca5c7b;
-}
-
-.card-icon { font-size:32px;margin-bottom:9px; }
-
-#about { background:linear-gradient(135deg,#d3edf4,#e7f7f9); }
-#about .banner { background:linear-gradient(120deg,#12517c,#138b92); }
-
-#education { background:linear-gradient(135deg,#d4e2fc,#eaf2ff); }
-#education .banner { background:linear-gradient(120deg,#153c73,#347bb8); }
-
-#certificates { background:linear-gradient(135deg,#d1eee0,#e7f8ef); }
-#certificates .banner { background:linear-gradient(120deg,#11584e,#22947e); }
-
-#experience { background:linear-gradient(135deg,#e1d6f7,#f1eafb); }
-#experience .banner { background:linear-gradient(120deg,#463276,#7753a6); }
-
-#projects { background:linear-gradient(135deg,#d7dfff,#edf0ff); }
-#projects .banner { background:linear-gradient(120deg,#29356c,#4e64ad); }
-
-#contact { background:linear-gradient(135deg,#f8dfbf,#fff0db); }
-#contact .banner { background:linear-gradient(120deg,#854b28,#bd7a39); }
-
-/* GET TO KNOW ME */
-
+.card h3 {margin:0 0 10px;color:#103b63}
+.card p {margin:9px 0}
+.grid>.card:nth-child(5n+1) {background:#dceaff;border-left-color:#2868ae}
+.grid>.card:nth-child(5n+2) {background:#e9ddfa;border-left-color:#8052b8}
+.grid>.card:nth-child(5n+3) {background:#ffedc8;border-left-color:#bd8725}
+.grid>.card:nth-child(5n+4) {background:#d2f0e6;border-left-color:#168a76}
+.grid>.card:nth-child(5n+5) {background:#ffdee8;border-left-color:#ca5c7b}
+.card-icon {font-size:32px;margin-bottom:9px}
+#about {background:linear-gradient(135deg,#d3edf4,#e7f7f9)}
+#about .banner {background:linear-gradient(120deg,#12517c,#138b92)}
+#education {background:linear-gradient(135deg,#d4e2fc,#eaf2ff)}
+#education .banner {background:linear-gradient(120deg,#153c73,#347bb8)}
+#certificates {background:linear-gradient(135deg,#d1eee0,#e7f8ef)}
+#certificates .banner {background:linear-gradient(120deg,#11584e,#22947e)}
+#experience {background:linear-gradient(135deg,#e1d6f7,#f1eafb)}
+#experience .banner {background:linear-gradient(120deg,#463276,#7753a6)}
+#projects {background:linear-gradient(135deg,#d7dfff,#edf0ff)}
+#projects .banner {background:linear-gradient(120deg,#29356c,#4e64ad)}
+#contact {background:linear-gradient(135deg,#f8dfbf,#fff0db)}
+#contact .banner {background:linear-gradient(120deg,#854b28,#bd7a39)}
 .get-intro {
-  background:#143c63;
-  color:white;
-  padding:27px;
-  border-radius:17px;
+  background:#143c63;color:white;
+  padding:27px;border-radius:17px;
 }
-
-.get-intro small {
-  color:var(--gold);
-  font-weight:bold;
-  letter-spacing:1px;
-}
-
-.get-intro h2 { color:white;margin:7px 0; }
-.get-intro p { margin:0;color:#e9f2fc; }
-
+.get-intro small {color:var(--gold);font-weight:bold;letter-spacing:1px}
+.get-intro h2 {color:white;margin:7px 0}
+.get-intro p {margin:0;color:#e9f2fc}
 .know-grid {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:13px;
-  margin-top:14px;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;margin-top:14px;
 }
-
-.know-card {
-  border-radius:15px;
-  padding:22px;
-  min-height:150px;
-}
-
-.know-card h3 { margin:7px 0;color:#162e45; }
-.know-card p { margin:0;font-size:14px; }
-.know-icon { font-size:27px; }
-
-.journey { background:#dceaff; }
-.family { background:#ffe5d3; }
-.passion { background:#d4f0e7; }
-.hobbies { background:#e9ddfa; }
-
+.know-card {border-radius:15px;padding:22px;min-height:150px}
+.know-card h3 {margin:7px 0;color:#162e45}
+.know-card p {margin:0;font-size:14px}
+.know-icon {font-size:27px}
+.journey {background:#dceaff}
+.family {background:#ffe5d3}
+.passion {background:#d4f0e7}
+.hobbies {background:#e9ddfa}
 .quote {
-  background:#143c63;
-  color:var(--gold);
-  border-radius:16px;
-  padding:30px;
-  text-align:center;
-  margin-top:14px;
-  font-size:21px;
-  font-weight:bold;
+  background:#143c63;color:var(--gold);
+  border-radius:16px;padding:30px;text-align:center;
+  margin-top:14px;font-size:21px;font-weight:bold;
 }
-
-.quote small {
-  display:block;
-  font-size:13px;
-  color:#e9f2fc;
-  margin-top:10px;
-}
-
+.quote small {display:block;font-size:13px;color:#e9f2fc;margin-top:10px}
 .about-intro {
-  display:flex;
-  align-items:center;
-  gap:30px;
-  background:#d5edf6;
-  border-left-color:#138b92;
+  display:flex;align-items:center;gap:30px;
+  background:#d5edf6;border-left-color:#138b92;
 }
-
 .about-photo {
-  width:200px;
-  height:245px;
-  object-fit:cover;
-  object-position:center 25%;
-  border:4px solid var(--gold);
-  border-radius:15px;
-  flex-shrink:0;
+  width:200px;height:245px;object-fit:cover;
+  object-position:center 25%;border:4px solid var(--gold);
+  border-radius:15px;flex-shrink:0;
 }
-
 .family-detail {
-  background:#ffe8d3;
-  border:2px solid #e6b78c;
+  background:#ffe8d3;border:2px solid #e6b78c;
   border-left:8px solid #b76b35;
-  border-radius:17px;
-  padding:27px;
-  margin-top:20px;
+  border-radius:17px;padding:27px;margin-top:20px;
 }
-
-.family-detail h3 {
-  color:#82421f;
-  margin-top:0;
-}
-
+.family-detail h3 {color:#82421f;margin-top:0}
 .family-member {
-  background:#fff5e9;
-  padding:13px 17px;
-  border-radius:10px;
-  margin:11px 0;
+  background:#fff5e9;padding:13px 17px;
+  border-radius:10px;margin:11px 0;
   border-left:5px solid #d78b45;
 }
-
-.family-member strong {
-  display:block;
-  color:#63381e;
-}
-
+.family-member strong {display:block;color:#63381e}
 .badge {
-  display:inline-block;
-  background:#145e96;
-  color:white;
-  border-radius:25px;
-  padding:5px 13px;
-  font-size:12px;
-  font-weight:bold;
+  display:inline-block;background:#145e96;color:white;
+  border-radius:25px;padding:5px 13px;
+  font-size:12px;font-weight:bold;
 }
-
-.badge.green { background:#127557; }
-.badge.purple { background:#7552aa; }
-
-.cert-group { margin:30px 0; }
-
+.badge.green {background:#127557}
+.badge.purple {background:#7552aa}
+.cert-group {margin:30px 0}
 .cert-group h2 {
-  background:#b7e4d0;
-  border-left:7px solid #138b78;
-  color:#105b50;
-  padding:13px 20px;
-  border-radius:11px;
+  background:#b7e4d0;border-left:7px solid #138b78;
+  color:#105b50;padding:13px 20px;border-radius:11px;
 }
-
 .cert {
-  background:#dceaff;
-  border:2px solid #b5d0f1;
+  background:#dceaff;border:2px solid #b5d0f1;
   border-left:7px solid #2868ae;
-  border-radius:13px;
-  padding:19px 22px;
-  margin:13px 0;
+  border-radius:13px;padding:19px 22px;margin:13px 0;
 }
-
-.cert:nth-of-type(4n+2) {
-  background:#e9ddfa;
-  border-left-color:#8052b8;
-}
-
-.cert:nth-of-type(4n+3) {
-  background:#ffedc8;
-  border-left-color:#bd8725;
-}
-
-.cert:nth-of-type(4n+4) {
-  background:#d2f0e6;
-  border-left-color:#168a76;
-}
-
-.cert strong { display:block;color:#103b63; }
-.cert small { display:block;color:#465e73; }
-
-.featured {
-  background:#c7dfff;
-  border-left:8px solid #145e96;
-  padding:26px;
-}
-
+.cert:nth-of-type(4n+2) {background:#e9ddfa;border-left-color:#8052b8}
+.cert:nth-of-type(4n+3) {background:#ffedc8;border-left-color:#bd8725}
+.cert:nth-of-type(4n+4) {background:#d2f0e6;border-left-color:#168a76}
+.cert strong {display:block;color:#103b63}
+.cert small {display:block;color:#465e73}
+.featured {background:#c7dfff;border-left:8px solid #145e96;padding:26px}
 .timeline {
   border-left:5px solid #7753a6;
-  margin:25px 0;
-  padding-left:24px;
+  margin:25px 0;padding-left:24px;
 }
-
 .timeline-item {
-  position:relative;
-  background:#e9ddfa;
-  border:2px solid #c8b3e8;
-  border-radius:15px;
-  padding:23px;
-  margin-bottom:22px;
+  position:relative;background:#e9ddfa;
+  border:2px solid #c8b3e8;border-radius:15px;
+  padding:23px;margin-bottom:22px;
 }
-
 .timeline-item:before {
-  content:"";
-  position:absolute;
-  width:15px;
-  height:15px;
-  background:#7753a6;
-  border:3px solid white;
-  border-radius:50%;
-  left:-36px;
-  top:25px;
+  content:"";position:absolute;width:15px;height:15px;
+  background:#7753a6;border:3px solid white;
+  border-radius:50%;left:-36px;top:25px;
 }
-
-.timeline-item h3 { color:#463276;margin:8px 0; }
-
-.contact-line {
-  padding:12px 0;
-  border-bottom:1px solid #b5cde2;
-}
-
-.contact-line strong {
-  display:block;
-  margin-bottom:5px;
-}
-
+.timeline-item h3 {color:#463276;margin:8px 0}
+.contact-line {padding:12px 0;border-bottom:1px solid #b5cde2}
+.contact-line strong {display:block;margin-bottom:5px}
 .contact-line a {
-  display:inline-block;
-  background:#c4e2ff;
-  border:1px solid #90bfe9;
-  border-radius:8px;
-  padding:6px 11px;
-  text-decoration:none;
+  display:inline-block;background:#c4e2ff;
+  border:1px solid #90bfe9;border-radius:8px;
+  padding:6px 11px;text-decoration:none;
   overflow-wrap:anywhere;
 }
-
-.contact-form {
-  display:grid;
-  gap:15px;
+.contact-form {display:grid;gap:15px}
+.contact-form label {font-weight:bold}
+.contact-form input,.contact-form textarea {
+  display:block;width:100%;padding:12px;margin-top:5px;
+  border:2px solid #a3c2de;border-radius:9px;
+  background:#e8f3ff;color:#17334d;
 }
-
-.contact-form label { font-weight:bold; }
-
-.contact-form input,
-.contact-form textarea {
-  display:block;
-  width:100%;
-  padding:12px;
-  margin-top:5px;
-  border:2px solid #a3c2de;
-  border-radius:9px;
-  background:#e8f3ff;
-  color:#17334d;
-}
-
-.contact-form textarea {
-  min-height:140px;
-  resize:vertical;
-}
-
-.note { font-size:13px;color:#526a80; }
-
+.contact-form textarea {min-height:140px;resize:vertical}
+.note {font-size:13px;color:#526a80}
 .cv-box {
-  background:#d2f0e6;
-  border:2px solid #99d5c0;
+  background:#d2f0e6;border:2px solid #99d5c0;
   border-left:7px solid #087e61;
-  padding:22px;
-  border-radius:14px;
-  margin-top:20px;
+  padding:22px;border-radius:14px;margin-top:20px;
 }
-
 footer {
-  background:#081c34;
-  color:#eaf3fb;
-  text-align:center;
-  padding:32px 20px;
+  background:#081c34;color:#eaf3fb;
+  text-align:center;padding:32px 20px;
 }
-
 footer a {
-  display:inline-block;
-  color:#fff0c5;
-  background:#1b4d75;
-  border-radius:8px;
-  padding:6px 12px;
-  margin:4px;
-  text-decoration:none;
+  display:inline-block;color:#fff0c5;
+  background:#1b4d75;border-radius:8px;
+  padding:6px 12px;margin:4px;text-decoration:none;
 }
-
 @media(min-width:900px) {
-  .know-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .know-grid {grid-template-columns:repeat(4,minmax(0,1fr))}
 }
-
 @media(max-width:750px) {
-  .hero-inner { grid-template-columns:1fr;text-align:center; }
-  .profile-photo { max-width:275px;height:325px; }
-  .hero-tags { justify-content:center; }
-  .about-intro { flex-direction:column;text-align:center; }
+  .hero-inner {grid-template-columns:1fr;text-align:center}
+  .profile-photo {max-width:275px;height:325px}
+  .hero-tags {justify-content:center}
+  .about-intro {flex-direction:column;text-align:center}
 }
-
 @media(max-width:500px) {
-  .know-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
-  .know-card { padding:14px; }
-  .know-card h3 { font-size:15px; }
-  .know-card p { font-size:12px; }
-  .brand h1 { font-size:17px; }
-  nav a { font-size:11px;padding:8px 10px; }
+  .know-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .know-card {padding:14px}
+  .know-card h3 {font-size:15px}
+  .know-card p {font-size:12px}
+  .brand h1 {font-size:17px}
+  nav a {font-size:11px;padding:8px 10px}
 }
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
   <div class="brand">
@@ -596,23 +289,16 @@ footer a {
 </header>
 
 <!-- HOME -->
-
 <section id="home" class="view">
-
   <div class="hero">
     <div class="hero-inner">
-
       <div>
         <div class="eyebrow">WELCOME TO MY PROFESSIONAL PORTFOLIO</div>
-
         <h2>Hamenyimana <span>Gerald</span></h2>
-
         <p>
           IT Professional | Technical Support |
-          System Administration | Networking |
-          Customer Service
+          System Administration | Networking | Customer Service
         </p>
-
         <p>
           Passionate about technology, solving problems,
           supporting people and building reliable digital solutions.
@@ -628,40 +314,32 @@ footer a {
         <a class="btn" href="#about">Get to Know Me</a>
         <a class="btn blue" href="#projects">Explore Projects</a>
         <a class="btn green" href="#contact">Contact Me</a>
+        <a class="btn green" href="https://wa.me/256753086633"
+           target="_blank" rel="noopener">🟢 WhatsApp Me</a>
 
-        <a class="btn green"
-           href="https://wa.me/256753086633"
-           target="_blank" rel="noopener">
-          🟢 WhatsApp Me
-        </a>
-
+        <!-- CV DOWNLOAD BUTTON -->
         <a class="btn purple"
-           href="Gerald_Hamenyimana_CV.pdf"
-           download>
-          📄 Download My CV
+           href="./Gerald_Hamenyimana_CV.pdf"
+           download="Gerald_Hamenyimana_CV.pdf">
+          📄 Download My CV (PDF)
         </a>
       </div>
 
       <img src="gera.jpeg"
            alt="Hamenyimana Gerald"
            class="profile-photo">
-
     </div>
   </div>
-
 </section>
 
 <!-- ABOUT ME -->
-
 <section id="about" class="view" hidden>
-
   <div class="banner">
     <h2>About Me</h2>
     <p>Discover my story, family, passions and professional journey</p>
   </div>
 
   <main>
-
     <div class="get-intro">
       <small>GET TO KNOW ME</small>
       <h2>More Than an IT Professional</h2>
@@ -673,31 +351,26 @@ footer a {
     </div>
 
     <div class="know-grid">
-
       <div class="know-card journey">
         <div class="know-icon">🎓</div>
         <h3>My Journey</h3>
         <p>From Kisoro to higher education and professional IT certifications.</p>
       </div>
-
       <div class="know-card family">
         <div class="know-icon">❤️</div>
         <h3>My Family</h3>
         <p>A husband and proud father of three children.</p>
       </div>
-
       <div class="know-card passion">
         <div class="know-icon">💻</div>
         <h3>My Passion</h3>
         <p>Computers, technology, troubleshooting and continuous learning.</p>
       </div>
-
       <div class="know-card hobbies">
         <div class="know-icon">🏊</div>
         <h3>My Hobbies</h3>
         <p>Swimming, reading newspapers and discovering new ideas.</p>
       </div>
-
     </div>
 
     <div class="quote">
@@ -706,78 +379,58 @@ footer a {
     </div>
 
     <h2 class="section-heading">Who I Am</h2>
-
     <div class="card about-intro">
-
-      <img src="gera.jpeg"
-           alt="Hamenyimana Gerald"
-           class="about-photo">
-
+      <img src="gera.jpeg" alt="Hamenyimana Gerald" class="about-photo">
       <div>
         <h3>Hello, I'm Hamenyimana Gerald</h3>
-
         <p>
-          I am an Information Technology professional based
-          in Uganda, with experience in data management,
-          customer service, reporting and field operations.
+          I am an Information Technology professional based in Uganda,
+          with experience in data management, customer service,
+          reporting and field operations.
         </p>
-
         <p>
-          I am passionate about technical support,
-          system administration, networking,
-          cybersecurity and web development.
+          I am passionate about technical support, system administration,
+          networking, cybersecurity and web development.
         </p>
-
         <p>
-          I enjoy learning new technologies,
-          solving problems and helping organizations
-          use digital tools effectively.
+          I enjoy learning new technologies, solving problems
+          and helping organizations use digital tools effectively.
         </p>
       </div>
-
     </div>
 
     <h2 class="section-heading">My Personal Story</h2>
-
     <div class="card">
       <h3>From Kisoro to Information Technology</h3>
-
       <p>
         My educational journey began at Chibumba Primary School
         in Kisoro District, Uganda.
       </p>
-
       <p>
-        I continued to Kanaba Secondary School
-        and later St. Adolf Tibeyarilwa Muhorro Secondary School.
+        I continued to Kanaba Secondary School and later
+        St. Adolf Tibeyarilwa Muhorro Secondary School.
       </p>
-
       <p>
         I pursued Information Technology at Kabale University
         and Uganda Martyrs University.
       </p>
-
       <p>
-        I continued developing my professional skills
-        through BYU–Pathway Worldwide, Ensign College,
+        I continued developing my professional skills through
+        BYU–Pathway Worldwide, Ensign College,
         Cisco Networking Academy and TestOut.
       </p>
-
       <p>
-        My work experience in data management,
-        reporting, customer service and field operations
+        My work experience in data management, reporting,
+        customer service and field operations
         has strengthened my professional abilities.
       </p>
     </div>
 
-    <!-- FAMILY DETAILS -->
-
+    <!-- FAMILY: NAMES WITHOUT AGES -->
     <h2 class="section-heading">My Family and Personal Life</h2>
 
     <div class="family-detail">
-
       <h3>👨‍👩‍👧‍👦 My Beautiful Family</h3>
-
       <p>
         I am happily married to my wife,
         <strong>Turyagumanawe Winnie</strong>.
@@ -790,18 +443,18 @@ footer a {
       </div>
 
       <div class="family-member">
-        <strong>🌟 My First Child</strong>
-        Twinamatsiko Valentine — 7 years old
+        <strong>🌟 First Child</strong>
+        Twinamatsiko Valentine
       </div>
 
       <div class="family-member">
-        <strong>🌟 My Second Child</strong>
-        Amanya Heb Elton — 4 years old
+        <strong>🌟 Second Child</strong>
+        Amanya Heb Elton
       </div>
 
       <div class="family-member">
-        <strong>🌟 My Third Child</strong>
-        Amanya Vanessa — 1½ years old
+        <strong>🌟 Third Child</strong>
+        Amanya Vanessa
       </div>
 
       <p>
@@ -809,25 +462,20 @@ footer a {
         love and motivation. They encourage me to continue
         working hard, learning and building a better future.
       </p>
-
     </div>
 
     <h2 class="section-heading">My Hobbies and Interests</h2>
-
     <div class="grid">
-
       <div class="card">
         <div class="card-icon">🏊</div>
         <h3>Swimming</h3>
         <p>I enjoy swimming as a way of staying active and refreshed.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">📰</div>
         <h3>Reading Newspapers</h3>
         <p>I enjoy keeping informed about current affairs and developments.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">💻</div>
         <h3>Computers and Technology</h3>
@@ -836,548 +484,382 @@ footer a {
           I enjoy learning, exploring and solving technical problems.
         </p>
       </div>
-
     </div>
 
     <h2 class="section-heading">My Professional Skills</h2>
-
     <div class="grid">
-
       <div class="card">
         <div class="card-icon">🖥️</div>
         <h3>Technical Support</h3>
         <p>Computer troubleshooting, IT help desk and user support.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">🌐</div>
         <h3>Networking</h3>
         <p>Network fundamentals, devices, addressing and troubleshooting.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">🖧</div>
         <h3>System Administration</h3>
         <p>Computer systems, server technologies and IT operations.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">🔐</div>
         <h3>Cybersecurity</h3>
         <p>Cybersecurity awareness and foundational security concepts.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">📊</div>
         <h3>Data Management</h3>
         <p>Data entry, documentation, reporting and records management.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">💻</div>
         <h3>Web Development</h3>
         <p>Building websites and practical digital solutions.</p>
       </div>
-
     </div>
 
     <h2 class="section-heading">My Career Goals</h2>
-
     <div class="card">
       <h3>Growing as an IT Professional</h3>
-
       <p>
-        My goal is to build a successful career
-        in technical support, system administration,
-        networking and IT operations.
+        My goal is to build a successful career in technical support,
+        system administration, networking and IT operations.
       </p>
-
       <p>
-        I want to contribute to organizations
-        that value technology, innovation,
-        teamwork and reliable service.
+        I want to contribute to organizations that value technology,
+        innovation, teamwork and reliable service.
       </p>
-
       <p>
-        I believe in continuous learning,
-        professionalism and helping others
-        through practical solutions.
+        I believe in continuous learning, professionalism
+        and helping others through practical solutions.
       </p>
     </div>
 
     <h2 class="section-heading">My Professional Values</h2>
-
     <div class="grid">
-
       <div class="card">
         <div class="card-icon">🤝</div>
         <h3>Teamwork</h3>
         <p>Working together to solve problems and achieve goals.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">📚</div>
         <h3>Continuous Learning</h3>
         <p>Improving my knowledge and keeping up with technology.</p>
       </div>
-
       <div class="card">
         <div class="card-icon">🎯</div>
         <h3>Professionalism</h3>
         <p>Working with reliability, responsibility and respect.</p>
       </div>
-
     </div>
 
     <a class="back-home" href="#home">← Back to Home</a>
-
   </main>
 </section>
 
 <!-- EDUCATION -->
-
 <section id="education" class="view" hidden>
-
   <div class="banner">
     <h2>My Educational Journey</h2>
     <p>From primary school to higher education and professional IT studies</p>
   </div>
-
   <main>
-
     <h2 class="section-heading">University and Higher Education</h2>
-
     <div class="grid">
-
       <div class="card">
         <span class="badge">In Progress</span>
         <h3>Ensign College</h3>
         <p>Information Technology and System Administration studies.</p>
-        <p>Expected completion: next academic term.</p>
       </div>
-
       <div class="card">
         <span class="badge green">Completed</span>
         <h3>Kabale University</h3>
         <p><strong>Bachelor's Degree in Information Technology</strong></p>
         <p>2013–2016</p>
       </div>
-
       <div class="card">
         <span class="badge green">Completed</span>
         <h3>Uganda Martyrs University</h3>
         <p><strong>Certificate in Information Technology</strong></p>
       </div>
-
       <div class="card">
         <span class="badge green">Completed</span>
         <h3>BYU–Pathway Worldwide</h3>
         <p><strong>PathwayConnect Certificate</strong></p>
       </div>
-
     </div>
 
     <h2 class="section-heading">Secondary School Education</h2>
-
     <div class="grid">
-
       <div class="card">
         <span class="badge purple">A-Level</span>
         <h3>St. Adolf Tibeyarilwa Muhorro Secondary School</h3>
         <p>Uganda Advanced Certificate of Education (UACE)</p>
         <p>Completed: 2011</p>
       </div>
-
       <div class="card">
         <span class="badge purple">O-Level</span>
         <h3>Kanaba Secondary School</h3>
         <p>Uganda Certificate of Education (UCE)</p>
         <p>Completed: 2009</p>
       </div>
-
     </div>
 
     <h2 class="section-heading">Primary School Education</h2>
-
     <div class="grid">
-
       <div class="card">
         <span class="badge green">Primary Education</span>
         <h3>Chibumba Primary School</h3>
         <p>Primary Leaving Examination (PLE)</p>
         <p>Kisoro District, Uganda</p>
       </div>
-
     </div>
-
     <a class="back-home" href="#home">← Back to Home</a>
-
   </main>
 </section>
 
 <!-- CERTIFICATES -->
-
 <section id="certificates" class="view" hidden>
-
   <div class="banner">
     <h2>Professional Certifications</h2>
     <p>My technical qualifications and issuing organizations</p>
   </div>
-
   <main>
-
     <div class="cert-group">
-
       <h2>TestOut</h2>
-
       <div class="cert featured">
         <strong>TestOut Hybrid Server Pro Certification</strong>
         <small>Issuing organization: TestOut</small>
         <small>Hybrid server administration and IT infrastructure</small>
       </div>
-
     </div>
 
     <div class="cert-group">
-
       <h2>Ensign College</h2>
-
       <div class="cert">
         <strong>Technical Support Engineer Certificate</strong>
         <small>Issuing institution: Ensign College</small>
       </div>
-
       <div class="cert">
         <strong>IT Professional Certificate</strong>
         <small>Issuing institution: Ensign College</small>
       </div>
-
       <div class="cert">
         <strong>System Administration Certificate</strong>
         <small>Issuing institution: Ensign College</small>
       </div>
-
       <div class="cert">
         <strong>Professional Certificate</strong>
         <small>Issuing institution: Ensign College</small>
       </div>
-
     </div>
 
     <div class="cert-group">
-
       <h2>BYU–Pathway Worldwide</h2>
-
       <div class="cert">
         <strong>PathwayConnect Certificate</strong>
         <small>Issuing institution: BYU–Pathway Worldwide</small>
       </div>
-
     </div>
 
     <div class="cert-group">
-
       <h2>Cisco Networking Academy (NetAcad)</h2>
-
       <div class="cert">
         <strong>Introduction to Cybersecurity</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Network Support and Security</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Network Technician Career Path</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Network Technician Career Path Exam</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Network Addressing and Basic Troubleshooting</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Networking Basics</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
       <div class="cert">
         <strong>Networking Devices and Initial Configuration</strong>
         <small>Training provider: Cisco Networking Academy</small>
       </div>
-
     </div>
 
     <div class="cert-group">
-
       <h2>Other Professional Training</h2>
-
       <div class="cert">
         <strong>Crime Prevention and Self Defence</strong>
         <small>Training institution: Uganda Police Force</small>
       </div>
-
       <div class="cert">
         <strong>1 Minute Typing Test</strong>
         <small>Typing skills assessment</small>
       </div>
-
     </div>
 
-    <p>
-      Individual certificate documents and verification
-      links can be added when available.
-    </p>
-
+    <p>Individual certificate documents and verification links can be added when available.</p>
     <a class="btn blue"
        href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-       target="_blank" rel="noopener">
-      View My LinkedIn Profile
-    </a>
-
-    <div>
-      <a class="back-home" href="#home">← Back to Home</a>
-    </div>
-
+       target="_blank" rel="noopener">View My LinkedIn Profile</a>
+    <div><a class="back-home" href="#home">← Back to Home</a></div>
   </main>
 </section>
 
 <!-- EXPERIENCE -->
-
 <section id="experience" class="view" hidden>
-
   <div class="banner">
     <h2>Professional Experience</h2>
     <p>My career journey and professional responsibilities</p>
   </div>
-
   <main>
-
     <h2 class="section-heading">My Career Timeline</h2>
-
     <div class="timeline">
-
       <div class="timeline-item">
         <span class="badge">2022–Present</span>
         <h3>Field Assistant</h3>
         <p><strong>Hands for an African Child</strong></p>
-        <p>
-          Field coordination, documentation,
-          reporting and operational support.
-        </p>
+        <p>Field coordination, documentation, reporting and operational support.</p>
       </div>
-
       <div class="timeline-item">
         <span class="badge purple">2018–2021</span>
         <h3>Data Entry Clerk</h3>
         <p><strong>Kigezi Tea Factory</strong></p>
-        <p>
-          Data entry, records management,
-          documentation and reporting.
-        </p>
+        <p>Data entry, records management, documentation and reporting.</p>
       </div>
-
       <div class="timeline-item">
         <h3>Insurance Representative</h3>
         <p><strong>ICEA</strong></p>
-        <p>
-          Customer relations, client communication
-          and service support.
-        </p>
+        <p>Customer relations, client communication and service support.</p>
       </div>
-
       <div class="timeline-item">
         <h3>Reports Manager Intern</h3>
         <p><strong>Line Upon Line Co.</strong></p>
-        <p>
-          Reporting, documentation
-          and organizational support.
-        </p>
+        <p>Reporting, documentation and organizational support.</p>
       </div>
-
     </div>
 
     <h2 class="section-heading">Professional Strengths</h2>
-
     <div class="grid">
-
       <div class="card">
         <h3>Documentation</h3>
         <p>Organizing records and preparing professional reports.</p>
       </div>
-
       <div class="card">
         <h3>Customer Service</h3>
         <p>Communicating with clients and supporting service needs.</p>
       </div>
-
       <div class="card">
         <h3>Data Management</h3>
         <p>Managing information, data entry and reporting.</p>
       </div>
-
     </div>
-
     <a class="back-home" href="#home">← Back to Home</a>
-
   </main>
 </section>
 
 <!-- PROJECTS -->
-
 <section id="projects" class="view" hidden>
-
   <div class="banner">
     <h2>My Technology Projects</h2>
     <p>Explore my practical IT and web development work</p>
   </div>
-
   <main>
-
     <div class="grid">
-
       <div class="card">
         <div class="card-icon">💻</div>
         <h3>IT Capstone Portfolio</h3>
-
-        <p>
-          My IT capstone project demonstrating
-          practical technology skills.
-        </p>
-
+        <p>My IT capstone project demonstrating practical technology skills.</p>
         <a class="btn blue"
            href="https://hamenyagerald.github.io/IT-Capstone-Finalization-Portfolio/"
-           target="_blank" rel="noopener">
-          View Project
-        </a>
+           target="_blank" rel="noopener">View Project</a>
       </div>
-
       <div class="card">
         <div class="card-icon">🌍</div>
         <h3>Open Hope Charities Website</h3>
-
-        <p>
-          A website project supporting a charitable
-          organization's digital presence.
-        </p>
-
+        <p>A website project supporting a charitable organization's digital presence.</p>
         <a class="btn purple"
            href="https://hamenyagerald.github.io/Open_Hope_Charities_Organisation/"
-           target="_blank" rel="noopener">
-          View Project
-        </a>
+           target="_blank" rel="noopener">View Project</a>
       </div>
-
       <div class="card">
         <div class="card-icon">🗂️</div>
         <h3>GitHub Repositories</h3>
-
-        <p>
-          Explore my other technical work,
-          repositories and source code.
-        </p>
-
+        <p>Explore my other technical work, repositories and source code.</p>
         <a class="btn green"
            href="https://github.com/hamenyagerald"
-           target="_blank" rel="noopener">
-          Explore GitHub
-        </a>
+           target="_blank" rel="noopener">Explore GitHub</a>
       </div>
-
     </div>
 
     <h2 class="section-heading">What My Projects Represent</h2>
-
     <div class="grid">
-
       <div class="card">
         <h3>Practical Learning</h3>
         <p>Applying technology knowledge to practical projects.</p>
       </div>
-
       <div class="card">
         <h3>Problem Solving</h3>
         <p>Exploring useful digital solutions.</p>
       </div>
-
       <div class="card">
         <h3>Continuous Improvement</h3>
         <p>Building my technical skills through practice.</p>
       </div>
-
     </div>
-
     <a class="back-home" href="#home">← Back to Home</a>
-
   </main>
 </section>
 
 <!-- CONTACT -->
-
 <section id="contact" class="view" hidden>
-
   <div class="banner">
     <h2>Contact Me</h2>
     <p>Let's connect about technology, career opportunities and collaboration</p>
   </div>
-
   <main>
-
     <div class="grid">
-
       <div class="card">
-
         <h3>My Contact Information</h3>
 
         <div class="contact-line">
           <strong>Phone Number 1</strong>
           <a href="tel:+256753086633">+256 753 086 633</a>
         </div>
-
         <div class="contact-line">
           <strong>Phone Number 2</strong>
           <a href="tel:+256394801178">+256 394 801 178</a>
         </div>
-
         <div class="contact-line">
           <strong>WhatsApp</strong>
           <a href="https://wa.me/256753086633"
-             target="_blank" rel="noopener">
-            🟢 Chat with Me on WhatsApp
-          </a>
+             target="_blank" rel="noopener">🟢 Chat with Me on WhatsApp</a>
         </div>
-
         <div class="contact-line">
           <strong>Email Address</strong>
-          <a href="mailto:hamenyagerald@gmail.com">
-            hamenyagerald@gmail.com
-          </a>
+          <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a>
         </div>
-
         <div class="contact-line">
           <strong>LinkedIn Profile</strong>
           <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-             target="_blank" rel="noopener">
-            Visit My LinkedIn Profile
-          </a>
+             target="_blank" rel="noopener">Visit My LinkedIn Profile</a>
         </div>
-
         <div class="contact-line">
           <strong>GitHub</strong>
           <a href="https://github.com/hamenyagerald"
-             target="_blank" rel="noopener">
-            github.com/hamenyagerald
-          </a>
+             target="_blank" rel="noopener">github.com/hamenyagerald</a>
         </div>
-
         <div class="contact-line">
           <strong>Location</strong>
           Uganda
@@ -1388,58 +870,32 @@ footer a {
           IT operations, system administration,
           networking and customer service.
         </p>
-
       </div>
 
       <div class="card">
-
         <h3>Send Me a Message</h3>
-
-        <p>
-          Complete the form below to prepare
-          an email addressed to me.
-        </p>
+        <p>Complete the form below to prepare an email addressed to me.</p>
 
         <form id="contactForm" class="contact-form">
-
-          <label>
-            Your Name
-            <input type="text" id="senderName"
-                   required placeholder="Enter your name">
+          <label>Your Name
+            <input type="text" id="senderName" required placeholder="Enter your name">
           </label>
-
-          <label>
-            Your Email
-            <input type="email" id="senderEmail"
-                   required placeholder="Enter your email address">
+          <label>Your Email
+            <input type="email" id="senderEmail" required placeholder="Enter your email address">
           </label>
-
-          <label>
-            Your Message
-            <textarea id="senderMessage"
-                      required
-                      placeholder="Write your message here"></textarea>
+          <label>Your Message
+            <textarea id="senderMessage" required placeholder="Write your message here"></textarea>
           </label>
-
-          <button type="submit" class="btn blue">
-            Prepare Email
-          </button>
-
+          <button type="submit" class="btn blue">Prepare Email</button>
           <p class="note">
             This opens your email application.
             Press Send there to deliver the message.
           </p>
-
         </form>
 
-        <!-- CV SECTION -->
-
         <h3>My Curriculum Vitae (CV)</h3>
-
         <div class="cv-box">
-
           <h3>📄 My Professional CV</h3>
-
           <p>
             Download my modern two-page professional CV
             to learn more about my qualifications,
@@ -1447,39 +903,28 @@ footer a {
             and professional experience.
           </p>
 
+          <!-- CV DOWNLOAD LINK -->
           <a class="btn purple"
-             href="Gerald_Hamenyimana_CV.pdf"
-             download>
-            Download My CV (PDF)
+             href="./Gerald_Hamenyimana_CV.pdf"
+             download="Gerald_Hamenyimana_CV.pdf">
+            📄 Download My CV (PDF)
           </a>
 
           <p class="note">
-            The PDF must be uploaded to the same
-            GitHub repository as index.html.
+            Upload Gerald_Hamenyimana_CV.pdf
+            to the same GitHub repository folder as index.html.
           </p>
-
         </div>
-
       </div>
-
     </div>
 
     <a class="back-home" href="#home">← Back to Home</a>
-
   </main>
 </section>
 
-<!-- FOOTER -->
-
 <footer>
-
   <p><strong>HAMENYIMANA GERALD</strong></p>
-
-  <p>
-    IT Professional | Technical Support |
-    System Administration | Networking
-  </p>
-
+  <p>IT Professional | Technical Support | System Administration | Networking</p>
   <p>
     <a href="tel:+256753086633">Call Me</a>
     <a href="mailto:hamenyagerald@gmail.com">Email</a>
@@ -1489,50 +934,35 @@ footer a {
        target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/hamenyagerald"
        target="_blank" rel="noopener">GitHub</a>
+    <a href="./Gerald_Hamenyimana_CV.pdf"
+       download="Gerald_Hamenyimana_CV.pdf">Download CV</a>
   </p>
-
   <p>© 2026 Hamenyimana Gerald. All rights reserved.</p>
-
 </footer>
 
-<!-- JAVASCRIPT -->
-
 <script>
-
 const pages = [
-  "home",
-  "about",
-  "education",
-  "certificates",
-  "experience",
-  "projects",
-  "contact"
+  "home","about","education","certificates",
+  "experience","projects","contact"
 ];
 
 function openPage() {
-
   const requested = window.location.hash.slice(1).toLowerCase();
-
-  const selected = pages.includes(requested)
-    ? requested
-    : "home";
+  const selected = pages.includes(requested) ? requested : "home";
 
   document.querySelectorAll(".view").forEach(section => {
     section.hidden = section.id !== selected;
   });
 
   document.querySelectorAll("nav a[data-target]").forEach(link => {
-
     const active = link.dataset.target === selected;
-
-    link.classList.toggle("active", active);
+    link.classList.toggle("active",active);
 
     if (active) {
-      link.setAttribute("aria-current", "page");
+      link.setAttribute("aria-current","page");
     } else {
       link.removeAttribute("aria-current");
     }
-
   });
 
   document.title =
@@ -1540,29 +970,21 @@ function openPage() {
     " | Hamenyimana Gerald";
 
   window.scrollTo(0,0);
-
 }
 
-window.addEventListener("hashchange", openPage);
-window.addEventListener("pageshow", openPage);
+window.addEventListener("hashchange",openPage);
+window.addEventListener("pageshow",openPage);
 
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-  link.addEventListener("click", function() {
-
+  link.addEventListener("click",function() {
     const destination = this.getAttribute("href").slice(1);
-
     if (window.location.hash === "#" + destination) {
       openPage();
     }
-
   });
-
 });
 
-document.getElementById("contactForm")
-.addEventListener("submit", function(event) {
-
+document.getElementById("contactForm").addEventListener("submit",function(event) {
   event.preventDefault();
 
   const name = document.getElementById("senderName").value.trim();
@@ -1571,10 +993,7 @@ document.getElementById("contactForm")
 
   if (!name || !email || !message) return;
 
-  const subject = encodeURIComponent(
-    "Portfolio Contact from " + name
-  );
-
+  const subject = encodeURIComponent("Portfolio Contact from " + name);
   const body = encodeURIComponent(
     "Name: " + name + "\n" +
     "Email: " + email + "\n\n" +
@@ -1584,15 +1003,14 @@ document.getElementById("contactForm")
   window.location.href =
     "mailto:hamenyagerald@gmail.com?subject=" +
     subject + "&body=" + body;
-
 });
 
 openPage();
-
 </script>
 
 </body>
 </html>
+
 
 
 
