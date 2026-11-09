@@ -1,1085 +1,941 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Hamenyimana Gerald - Professional IT Portfolio">
-<title>Hamenyimana Gerald | Professional IT Portfolio</title>
+<title>Hamenyimana Gerald | IT Portfolio</title>
 
 <style>
 :root{
-  --navy:#0a213b;
-  --blue:#145e96;
-  --gold:#ffcb72;
-  --green:#087e61;
-  --ink:#17334d;
+ --navy:#0b2945;
+ --gold:#ffcb72;
+ --blue:#145e96;
+ --green:#087e61;
+ --ink:#17334d;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:auto}
 body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#dceaf4;
-  color:var(--ink);
-  line-height:1.7;
+ margin:0;
+ font-family:Arial,Helvetica,sans-serif;
+ color:var(--ink);
+ background:#e3edf7;
+ line-height:1.7;
 }
 [hidden]{display:none!important}
 a{color:#104d83}
 button,input,textarea{font:inherit}
-a,button{transition:all .2s ease}
+a,button{transition:.2s}
 a:focus-visible,button:focus-visible{
-  outline:3px solid #f0a500;
-  outline-offset:3px;
+ outline:3px solid #e99b00;
+ outline-offset:3px;
 }
-
-/* HEADER */
 header{
-  background:linear-gradient(110deg,#fff,#e6f1ff);
-  padding:18px 6%;
-  border-bottom:4px solid var(--gold);
+ padding:18px 6%;
+ background:linear-gradient(110deg,#fff,#e5f1ff);
+ border-bottom:4px solid var(--gold);
 }
 .brand{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  margin-bottom:18px;
+ display:flex;
+ align-items:center;
+ gap:14px;
+ margin-bottom:17px;
 }
 .logo{
-  background:var(--navy);
-  color:var(--gold);
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  font-size:23px;
-  font-weight:bold;
-  border:3px solid #d9ac55;
-  flex-shrink:0;
+ width:58px;
+ height:58px;
+ border-radius:50%;
+ background:var(--navy);
+ border:3px solid #d9ac55;
+ color:var(--gold);
+ display:grid;
+ place-items:center;
+ font-size:23px;
+ font-weight:bold;
+ flex-shrink:0;
 }
 .brand h1{
-  color:var(--navy);
-  font-size:22px;
-  margin:0;
-  line-height:1.3;
+ color:var(--navy);
+ font-size:22px;
+ line-height:1.3;
+ margin:0;
 }
 .brand p{
-  color:#536f86;
-  font-size:12px;
-  letter-spacing:2px;
-  margin:0;
+ color:#536f86;
+ font-size:12px;
+ letter-spacing:2px;
+ margin:0;
 }
 nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
+ display:flex;
+ flex-wrap:wrap;
+ gap:9px;
 }
 nav a{
-  display:inline-block;
-  text-decoration:none;
-  color:#123b5c;
-  background:#cce4ff;
-  border:1px solid #9ac5ef;
-  border-radius:9px;
-  padding:9px 13px;
-  font-size:12px;
-  font-weight:bold;
+ background:#cce4ff;
+ color:#123b5c;
+ border:1px solid #9ac5ef;
+ border-radius:9px;
+ padding:9px 13px;
+ font-size:12px;
+ font-weight:bold;
+ text-decoration:none;
 }
 nav a:hover,nav a.active{
-  background:#103c64;
-  color:#fff;
-  border-color:#103c64;
+ background:#103c64;
+ color:white;
+ border-color:#103c64;
 }
-
-/* HOME */
 .hero{
-  background:linear-gradient(120deg,#081c34,#14517c);
-  color:white;
-  padding:75px 7%;
-  min-height:65vh;
-  display:flex;
-  align-items:center;
+ background:linear-gradient(120deg,#081c34,#14517c);
+ color:white;
+ padding:75px 7%;
+ min-height:65vh;
+ display:flex;
+ align-items:center;
 }
 .hero-inner{
-  width:100%;
-  max-width:1150px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.5fr 1fr;
-  gap:45px;
-  align-items:center;
+ width:100%;
+ max-width:1150px;
+ margin:auto;
+ display:grid;
+ grid-template-columns:1.5fr 1fr;
+ gap:45px;
+ align-items:center;
 }
 .hero h2{
-  color:#fff;
-  font-size:clamp(35px,5vw,60px);
-  line-height:1.15;
-  margin:15px 0;
+ color:white;
+ font-size:clamp(35px,5vw,60px);
+ line-height:1.15;
+ margin:15px 0;
 }
 .hero h2 span{color:var(--gold)}
-.hero p{font-size:17px;color:#e7f2fb}
+.hero p{color:#e7f2fb;font-size:17px}
 .eyebrow{
-  color:var(--gold);
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:2px;
+ color:var(--gold);
+ letter-spacing:2px;
+ font-weight:bold;
+ font-size:13px;
 }
 .profile-photo{
-  width:100%;
-  max-width:350px;
-  height:410px;
-  object-fit:cover;
-  object-position:center 25%;
-  border:5px solid var(--gold);
-  border-radius:20px;
-  box-shadow:0 15px 35px #0004;
-  display:block;
-  margin:auto;
+ width:100%;
+ max-width:350px;
+ height:410px;
+ object-fit:cover;
+ object-position:center 25%;
+ border:5px solid var(--gold);
+ border-radius:20px;
+ box-shadow:0 15px 35px #0004;
+ display:block;
+ margin:auto;
 }
-
-/* PAGE BACKGROUNDS */
 .banner{
-  text-align:center;
-  padding:55px 7%;
-  color:#fff;
+ text-align:center;
+ padding:55px 7%;
+ color:white;
 }
 .banner h2{
-  color:#fff;
-  font-size:clamp(30px,5vw,46px);
-  margin:0;
+ color:white;
+ font-size:clamp(30px,5vw,46px);
+ margin:0;
 }
-.banner p{margin:8px 0;color:#f0f6fc}
-
+.banner p{color:#f0f6fc;margin:8px 0}
 #about{background:linear-gradient(135deg,#ccebf2,#e4f7f7)}
 #about .banner{background:linear-gradient(120deg,#12517c,#138b92)}
-
 #education{background:linear-gradient(135deg,#cfdefb,#e8f1ff)}
 #education .banner{background:linear-gradient(120deg,#143a70,#347bb8)}
-
 #certificates{background:linear-gradient(135deg,#ccecdf,#e5f8ed)}
 #certificates .banner{background:linear-gradient(120deg,#11584e,#22947e)}
-
 #experience{background:linear-gradient(135deg,#dfd1f7,#f0e7fc)}
 #experience .banner{background:linear-gradient(120deg,#463276,#7753a6)}
-
 #projects{background:linear-gradient(135deg,#d4ddff,#eceeff)}
 #projects .banner{background:linear-gradient(120deg,#29356c,#4e64ad)}
-
 #contact{background:linear-gradient(135deg,#f8dfbf,#fff0db)}
 #contact .banner{background:linear-gradient(120deg,#854b28,#bd7a39)}
 
 main{
-  max-width:1120px;
-  margin:auto;
-  padding:48px 20px 80px;
-  min-height:45vh;
+ max-width:1120px;
+ margin:auto;
+ padding:48px 20px 80px;
+ min-height:45vh;
 }
 h2,h3{color:#103657}
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
-  margin-top:25px;
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+ gap:22px;
+ margin-top:25px;
 }
-
-/* ALL CARDS HAVE REAL BACKGROUND COLORS */
 .card{
-  background:#dceaff!important;
-  border-radius:16px;
-  padding:27px;
-  border:2px solid #a8c8ef;
-  border-left:7px solid #2864c5;
-  box-shadow:0 7px 22px #0b294119;
+ background:#d6e7ff;
+ border:2px solid #a7c6ee;
+ border-left:7px solid #2864c5;
+ border-radius:16px;
+ padding:26px;
+ box-shadow:0 7px 22px #0b294119;
 }
-.card h3{
-  color:#123d65;
-  margin:0 0 10px;
-}
+.card h3{margin:0 0 10px;color:#123d65}
 .card p{margin:8px 0;color:#243b53}
-
 .grid>.card:nth-child(5n+1){
-  background:#d6e7ff!important;
-  border-color:#9cbeee;
-  border-left-color:#2864c5;
+ background:#d6e7ff;
+ border-color:#9cbeee;
+ border-left-color:#2864c5;
 }
 .grid>.card:nth-child(5n+2){
-  background:#e8d9ff!important;
-  border-color:#c5a8e9;
-  border-left-color:#8151ba;
+ background:#e8d9ff;
+ border-color:#c5a8e9;
+ border-left-color:#8151ba;
 }
 .grid>.card:nth-child(5n+3){
-  background:#ffebc2!important;
-  border-color:#e4c27a;
-  border-left-color:#b8841f;
+ background:#ffebc2;
+ border-color:#e4c27a;
+ border-left-color:#b8841f;
 }
 .grid>.card:nth-child(5n+4){
-  background:#ccefe4!important;
-  border-color:#91d1bf;
-  border-left-color:#188a78;
+ background:#ccefe4;
+ border-color:#91d1bf;
+ border-left-color:#188a78;
 }
 .grid>.card:nth-child(5n+5){
-  background:#ffdae5!important;
-  border-color:#e5a7ba;
-  border-left-color:#c64f79;
+ background:#ffdae5;
+ border-color:#e5a7ba;
+ border-left-color:#c64f79;
 }
-
-/* BUTTONS */
 .btn,.back-home{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:12px 22px;
-  border-radius:9px;
-  border:0;
-  font-weight:bold;
-  text-decoration:none;
-  cursor:pointer;
-  margin:8px 8px 8px 0;
-  box-shadow:0 4px 12px #0002;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ gap:9px;
+ padding:12px 22px;
+ border-radius:9px;
+ border:0;
+ font-weight:bold;
+ text-decoration:none;
+ cursor:pointer;
+ margin:8px 8px 8px 0;
+ box-shadow:0 4px 12px #0002;
 }
 .btn{background:var(--gold);color:var(--navy)}
-.btn.blue{background:#145e96;color:#fff}
-.btn.green{background:#087e61;color:#fff}
-.btn.purple{background:#63429a;color:#fff}
+.btn.blue{background:#145e96;color:white}
+.btn.green{background:#087e61;color:white}
+.btn.purple{background:#63429a;color:white}
 .btn:hover,.back-home:hover{
-  filter:brightness(.9);
-  transform:translateY(-2px);
+ filter:brightness(.9);
+ transform:translateY(-2px);
 }
 .back-home{
-  margin-top:35px;
-  background:var(--navy);
-  color:#fff;
+ background:var(--navy);
+ color:white;
+ margin-top:35px;
 }
 .whatsapp-icon{
-  width:23px;
-  height:23px;
-  fill:currentColor;
-  flex-shrink:0;
+ width:23px;
+ height:23px;
+ fill:currentColor;
+ flex-shrink:0;
 }
-
-/* EVERY ORDINARY LINK HAS A BACKGROUND */
 main a:not(.btn):not(.back-home){
-  display:inline-block;
-  background:#badbff;
-  color:#073d72;
-  border:1px solid #85b5e5;
-  border-radius:8px;
-  padding:6px 12px;
-  font-weight:bold;
-  text-decoration:none;
-  overflow-wrap:anywhere;
+ display:inline-block;
+ background:#badbff;
+ color:#073d72;
+ border:1px solid #85b5e5;
+ border-radius:8px;
+ padding:6px 12px;
+ font-weight:bold;
+ text-decoration:none;
+ overflow-wrap:anywhere;
 }
 main a:not(.btn):not(.back-home):hover{
-  background:#95c5f7;
-  color:#082e55;
+ background:#95c5f7;
 }
-
-/* ABOUT */
 .about-intro{
-  display:flex;
-  gap:30px;
-  align-items:center;
-  background:#cceaf5!important;
-  border-color:#8ec8d6!important;
-  border-left-color:#138b92!important;
+ display:flex;
+ gap:30px;
+ align-items:center;
+ background:#cceaf5;
+ border-color:#8ec8d6;
+ border-left-color:#138b92;
 }
 .about-photo{
-  width:210px;
-  height:250px;
-  object-fit:cover;
-  object-position:center 25%;
-  border:4px solid var(--gold);
-  border-radius:15px;
-  flex-shrink:0;
+ width:210px;
+ height:250px;
+ object-fit:cover;
+ object-position:center 25%;
+ border:4px solid var(--gold);
+ border-radius:15px;
+ flex-shrink:0;
 }
 .skill-card{text-align:center}
 .skill-card .symbol{font-size:32px;margin-bottom:8px}
 .contact-details{
-  background:linear-gradient(120deg,#103657,#155c78);
-  color:#fff;
-  border-radius:16px;
-  padding:27px;
-  margin-top:25px;
+ background:linear-gradient(120deg,#103657,#155c78);
+ color:white;
+ border-radius:16px;
+ padding:27px;
+ margin-top:25px;
 }
 .contact-details h3{color:var(--gold)}
 .contact-details p{margin:12px 0}
 .contact-details a:not(.btn){
-  background:#28628a!important;
-  color:#fff!important;
-  border-color:#4d91b9!important;
+ background:#28628a!important;
+ color:white!important;
+ border-color:#4d91b9!important;
 }
-.contact-details a:not(.btn):hover{
-  background:#367eab!important;
-}
-
-/* EDUCATION */
 .tag{
-  display:inline-block;
-  padding:5px 13px;
-  border-radius:20px;
-  background:#135e9a;
-  color:#fff;
-  font-size:12px;
-  font-weight:bold;
+ display:inline-block;
+ padding:5px 13px;
+ border-radius:20px;
+ background:#135e9a;
+ color:white;
+ font-size:12px;
+ font-weight:bold;
 }
 .tag.completed{background:#126d55}
-
-/* CERTIFICATES - COLORED INDIVIDUAL BOXES */
+.education-heading{
+ background:#c1d9f6;
+ border-left:6px solid #347bb8;
+ border-radius:10px;
+ padding:12px 18px;
+ margin-top:35px;
+}
 .cert-group{margin:28px 0}
 .cert-group h2{
-  color:#105c50;
-  background:#b6e2d0;
-  padding:13px 18px;
-  border-radius:10px;
-  border-left:6px solid #22947e;
+ color:#105c50;
+ background:#b6e2d0;
+ padding:13px 18px;
+ border-radius:10px;
+ border-left:6px solid #22947e;
 }
 .cert{
-  background:#d6e7ff!important;
-  border:2px solid #a7c6ee;
-  border-left:7px solid #2864c5;
-  border-radius:14px;
-  padding:20px 24px;
-  margin:14px 0;
-  box-shadow:0 5px 16px #0b294117;
+ background:#d6e7ff;
+ border:2px solid #a7c6ee;
+ border-left:7px solid #2864c5;
+ border-radius:14px;
+ padding:20px 24px;
+ margin:14px 0;
+ box-shadow:0 5px 16px #0b294117;
 }
 .cert:nth-of-type(5n+1){
-  background:#d6e7ff!important;
-  border-color:#a7c6ee;
-  border-left-color:#2864c5;
+ background:#d6e7ff;
+ border-color:#a7c6ee;
+ border-left-color:#2864c5;
 }
 .cert:nth-of-type(5n+2){
-  background:#e8d9ff!important;
-  border-color:#c9a9eb;
-  border-left-color:#8151ba;
+ background:#e8d9ff;
+ border-color:#c9a9eb;
+ border-left-color:#8151ba;
 }
 .cert:nth-of-type(5n+3){
-  background:#ffebc2!important;
-  border-color:#e6c887;
-  border-left-color:#b8841f;
+ background:#ffebc2;
+ border-color:#e6c887;
+ border-left-color:#b8841f;
 }
 .cert:nth-of-type(5n+4){
-  background:#ccefe4!important;
-  border-color:#98d4c1;
-  border-left-color:#188a78;
+ background:#ccefe4;
+ border-color:#98d4c1;
+ border-left-color:#188a78;
 }
 .cert:nth-of-type(5n+5){
-  background:#ffdae5!important;
-  border-color:#e9aabb;
-  border-left-color:#c64f79;
+ background:#ffdae5;
+ border-color:#e9aabb;
+ border-left-color:#c64f79;
 }
 .cert strong{
-  display:block;
-  color:#122e4c;
-  font-size:17px;
+ display:block;
+ color:#122e4c;
+ font-size:17px;
 }
 .cert small{
-  display:block;
-  color:#39536c;
-  font-size:13px;
-  margin-top:4px;
+ display:block;
+ color:#39536c;
+ font-size:13px;
+ margin-top:4px;
 }
-.cert-featured{
-  background:linear-gradient(110deg,#bcd9ff,#d9e9ff)!important;
-  border:2px solid #729fda!important;
-  border-left:8px solid #145e96!important;
-  padding:26px;
+.cert.cert-featured{
+ background:linear-gradient(110deg,#bcd9ff,#d9e9ff);
+ border:2px solid #729fda;
+ border-left:8px solid #145e96;
+ padding:26px;
 }
-.cert-featured strong{
-  color:#103c70;
-  font-size:21px;
-}
-
-/* CONTACT */
+.cert-featured strong{font-size:21px;color:#103c70}
 .contact-line{
-  padding:13px 0;
-  border-bottom:1px solid #a7c5df;
-  overflow-wrap:anywhere;
+ padding:13px 0;
+ border-bottom:1px solid #a7c5df;
+ overflow-wrap:anywhere;
 }
 .contact-line strong{
-  display:block;
-  color:#173b5b;
-  margin-bottom:5px;
+ display:block;
+ color:#173b5b;
+ margin-bottom:5px;
 }
 .contact-form{display:grid;gap:15px}
-.contact-form label{
-  color:#183a54;
-  font-weight:bold;
+.contact-form label{color:#183a54;font-weight:bold}
+.contact-form input,.contact-form textarea{
+ display:block;
+ width:100%;
+ padding:12px;
+ border:2px solid #9bbbd9;
+ border-radius:9px;
+ margin-top:5px;
+ background:#e4f1ff;
+ color:#182f44;
 }
-.contact-form input,
-.contact-form textarea{
-  display:block;
-  width:100%;
-  padding:12px;
-  border:2px solid #9bbbd9;
-  border-radius:9px;
-  margin-top:5px;
-  background:#e4f1ff;
-  color:#182f44;
-}
-.contact-form textarea{
-  min-height:145px;
-  resize:vertical;
-}
-.contact-form input:focus,
-.contact-form textarea:focus{
-  outline:2px solid #145e96;
+.contact-form textarea{min-height:145px;resize:vertical}
+.contact-form input:focus,.contact-form textarea:focus{
+ outline:2px solid #145e96;
 }
 .note{font-size:13px;color:#39536c}
-
-/* FOOTER */
 footer{
-  background:#081c34;
-  color:#e8f1fa;
-  text-align:center;
-  padding:30px 20px;
+ background:#081c34;
+ color:#e8f1fa;
+ text-align:center;
+ padding:30px 20px;
 }
 footer a{
-  display:inline-block;
-  background:#1b4c74;
-  color:#fff0c5;
-  border-radius:8px;
-  padding:6px 12px;
-  text-decoration:none;
-  margin:3px;
+ display:inline-block;
+ background:#1b4c74;
+ color:#fff0c5;
+ border-radius:8px;
+ padding:6px 12px;
+ text-decoration:none;
+ margin:3px;
 }
 footer a:hover{background:#286c9f}
-
 @media(max-width:750px){
-  .hero-inner{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-  .profile-photo{max-width:270px;height:320px}
-  .about-intro{flex-direction:column;text-align:center}
+ .hero-inner{grid-template-columns:1fr;text-align:center}
+ .profile-photo{max-width:270px;height:320px}
+ .about-intro{flex-direction:column;text-align:center}
 }
 @media(max-width:600px){
-  header{padding:17px 5%}
-  .brand h1{font-size:17px}
-  nav{gap:7px}
-  nav a{font-size:11px;padding:8px 10px}
-  .card{padding:20px}
-  .hero{padding:50px 6%}
+ header{padding:17px 5%}
+ .brand h1{font-size:17px}
+ nav{gap:7px}
+ nav a{font-size:11px;padding:8px 10px}
+ .card{padding:20px}
+ .hero{padding:50px 6%}
 }
 </style>
 </head>
-
 <body>
 
-<!-- Reusable WhatsApp icon -->
+<!-- WHATSAPP LOGO -->
 <svg xmlns="http://www.w3.org/2000/svg"
-     style="position:absolute;width:0;height:0;overflow:hidden"
-     aria-hidden="true">
-  <symbol id="wa-icon" viewBox="0 0 32 32">
-    <path d="M16 .7A15.2 15.2 0 0 0 2.8 23.4L.7 31.3l8.1-2.1A15.3 15.3 0 1 0 16 .7zm0 27.8a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5a12.5 12.5 0 1 1 10.6 5.9zm6.9-9.4c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.8c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.2.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.7-.5z"/>
-  </symbol>
+ style="position:absolute;width:0;height:0;overflow:hidden"
+ aria-hidden="true">
+ <symbol id="wa-icon" viewBox="0 0 32 32">
+  <path d="M16 .7A15.2 15.2 0 0 0 2.8 23.4L.7 31.3l8.1-2.1A15.3 15.3 0 1 0 16 .7zm0 27.8a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5a12.5 12.5 0 1 1 10.6 5.9zm6.9-9.4c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.8c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.2.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.7-.5z"/>
+ </symbol>
 </svg>
 
 <!-- HEADER -->
 <header>
-  <div class="brand">
-    <div class="logo">HG</div>
-    <div>
-      <h1>HAMENYIMANA GERALD</h1>
-      <p>PROFESSIONAL IT PORTFOLIO</p>
-    </div>
+ <div class="brand">
+  <div class="logo">HG</div>
+  <div>
+   <h1>HAMENYIMANA GERALD</h1>
+   <p>PROFESSIONAL IT PORTFOLIO</p>
   </div>
-
-  <nav aria-label="Main navigation">
-    <a href="#home" data-target="home">HOME</a>
-    <a href="#about" data-target="about">ABOUT ME</a>
-    <a href="#education" data-target="education">EDUCATION</a>
-    <a href="#certificates" data-target="certificates">CERTIFICATES</a>
-    <a href="#experience" data-target="experience">EXPERIENCE</a>
-    <a href="#projects" data-target="projects">PROJECTS</a>
-    <a href="#contact" data-target="contact">CONTACT</a>
-  </nav>
+ </div>
+ <nav aria-label="Main navigation">
+  <a href="#home" data-target="home">HOME</a>
+  <a href="#about" data-target="about">ABOUT ME</a>
+  <a href="#education" data-target="education">EDUCATION</a>
+  <a href="#certificates" data-target="certificates">CERTIFICATES</a>
+  <a href="#experience" data-target="experience">EXPERIENCE</a>
+  <a href="#projects" data-target="projects">PROJECTS</a>
+  <a href="#contact" data-target="contact">CONTACT</a>
+ </nav>
 </header>
 
 <!-- HOME -->
 <section id="home" class="view">
-  <div class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
-        <h2>Hamenyimana <span>Gerald</span></h2>
-        <p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
-        <p>Passionate about solving technical problems, supporting users, and developing reliable digital solutions.</p>
-
-        <a class="btn" href="#projects">Explore Projects</a>
-        <a class="btn blue" href="#contact">Contact Me</a>
-        <a class="btn green"
-           href="https://wa.me/256753086633"
-           target="_blank" rel="noopener">
-          <svg class="whatsapp-icon" aria-hidden="true">
-            <use href="#wa-icon"></use>
-          </svg>
-          WhatsApp Me
-        </a>
-      </div>
-
-      <img src="gera.jpeg"
-           alt="Portrait of Hamenyimana Gerald"
-           class="profile-photo">
-    </div>
+ <div class="hero">
+  <div class="hero-inner">
+   <div>
+    <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
+    <h2>Hamenyimana <span>Gerald</span></h2>
+    <p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
+    <p>Passionate about solving technical problems, supporting users, and developing reliable digital solutions.</p>
+    <a class="btn" href="#projects">Explore Projects</a>
+    <a class="btn blue" href="#contact">Contact Me</a>
+    <a class="btn green" href="https://wa.me/256753086633"
+       target="_blank" rel="noopener">
+     <svg class="whatsapp-icon" aria-hidden="true"><use href="#wa-icon"></use></svg>
+     WhatsApp Me
+    </a>
+   </div>
+   <img src="gera.jpeg" alt="Portrait of Hamenyimana Gerald"
+        class="profile-photo">
   </div>
+ </div>
 </section>
 
 <!-- ABOUT ME -->
 <section id="about" class="view" hidden>
-  <div class="banner">
-    <h2>About Me</h2>
-    <p>Professional background, technical skills and contact information</p>
+ <div class="banner">
+  <h2>About Me</h2>
+  <p>My background, professional skills and contact information</p>
+ </div>
+ <main>
+  <div class="card about-intro">
+   <img src="gera.jpeg" alt="Hamenyimana Gerald" class="about-photo">
+   <div>
+    <h3>Who I Am</h3>
+    <p>My name is Hamenyimana Gerald. I am an IT professional based in Uganda, with experience in data management, customer service, reporting, and field operations.</p>
+    <p>My technical interests include IT help desk support, system administration, networking, cybersecurity, and web development.</p>
+    <p>I enjoy solving technical problems, learning new technologies, and helping organizations use digital tools effectively.</p>
+   </div>
   </div>
 
-  <main>
-    <div class="card about-intro">
-      <img src="gera.jpeg"
-           alt="Portrait of Hamenyimana Gerald"
-           class="about-photo">
-
-      <div>
-        <h3>Who I Am</h3>
-        <p>My name is Hamenyimana Gerald. I am an IT professional based in Uganda, with experience in data management, customer service, reporting, and field operations.</p>
-        <p>My technical interests include IT help desk support, system administration, networking, cybersecurity, and web development.</p>
-        <p>I enjoy solving technical problems, learning new technologies, and helping organizations use digital tools effectively.</p>
-      </div>
-    </div>
-
-    <h2>My Professional Skills</h2>
-
-    <div class="grid">
-      <div class="card skill-card">
-        <div class="symbol">🖥️</div>
-        <h3>Technical Support</h3>
-        <p>Computer troubleshooting, user support, and IT problem-solving.</p>
-      </div>
-
-      <div class="card skill-card">
-        <div class="symbol">🌐</div>
-        <h3>System Administration</h3>
-        <p>Server management, computer systems, networking, and technical operations.</p>
-      </div>
-
-      <div class="card skill-card">
-        <div class="symbol">💻</div>
-        <h3>Web Projects</h3>
-        <p>Website development and practical digital solutions.</p>
-      </div>
-    </div>
-
-    <div class="contact-details">
-      <h3>My Contact Information</h3>
-
-      <p><strong>Phone 1:</strong>
-        <a href="tel:+256753086633">+256 753 086 633</a>
-      </p>
-
-      <p><strong>Phone 2:</strong>
-        <a href="tel:+256394801178">+256 394 801 178</a>
-      </p>
-
-      <p><strong>Email:</strong>
-        <a href="mailto:hamenyagerald@gmail.com">
-          hamenyagerald@gmail.com
-        </a>
-      </p>
-
-      <p><strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-           target="_blank" rel="noopener">
-          View My LinkedIn Profile
-        </a>
-      </p>
-
-      <p><strong>GitHub:</strong>
-        <a href="https://github.com/hamenyagerald"
-           target="_blank" rel="noopener">
-          github.com/hamenyagerald
-        </a>
-      </p>
-
-      <p><strong>Location:</strong> Uganda</p>
-
-      <a class="btn green"
-         href="https://wa.me/256753086633"
-         target="_blank" rel="noopener">
-        <svg class="whatsapp-icon" aria-hidden="true">
-          <use href="#wa-icon"></use>
-        </svg>
-        Chat on WhatsApp
-      </a>
-
-      <a class="btn" href="#contact">Send a Message</a>
-    </div>
-
-    <a class="back-home" href="#home">← Back to Home</a>
-  </main>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="view" hidden>
-  <div class="banner">
-    <h2>Education</h2>
-    <p>Academic background and qualifications</p>
+  <h2>My Professional Skills</h2>
+  <div class="grid">
+   <div class="card skill-card">
+    <div class="symbol">🖥️</div>
+    <h3>Technical Support</h3>
+    <p>Computer troubleshooting, user support and IT problem-solving.</p>
+   </div>
+   <div class="card skill-card">
+    <div class="symbol">🌐</div>
+    <h3>System Administration</h3>
+    <p>Server management, computer systems, networking and technical operations.</p>
+   </div>
+   <div class="card skill-card">
+    <div class="symbol">💻</div>
+    <h3>Web Projects</h3>
+    <p>Website development and practical digital solutions.</p>
+   </div>
   </div>
 
-  <main>
-    <div class="grid">
-
-      <div class="card">
-        <span class="tag">In Progress</span>
-        <h3>Ensign College</h3>
-        <p>Bachelor's-level studies in Information Technology and System Administration.</p>
-        <p>Expected completion: next academic term.</p>
-      </div>
-
-      <div class="card">
-        <span class="tag completed">Completed</span>
-        <h3>Kabale University</h3>
-        <p>Bachelor's Degree in Information Technology</p>
-        <p>2013–2016</p>
-      </div>
-
-      <div class="card">
-        <span class="tag completed">Completed</span>
-        <h3>Uganda Martyrs University</h3>
-        <p>Certificate in Information Technology</p>
-      </div>
-
-      <div class="card">
-        <span class="tag completed">Completed</span>
-        <h3>BYU–Pathway Worldwide</h3>
-        <p>PathwayConnect Certificate</p>
-      </div>
-
-    </div>
-
-    <a class="back-home" href="#home">← Back to Home</a>
-  </main>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="view" hidden>
-  <div class="banner">
-    <h2>Professional Certifications</h2>
-    <p>Technical certifications, qualifications and issuing institutions</p>
-  </div>
-
-  <main>
-
-    <div class="cert-group">
-      <h2>TestOut</h2>
-
-      <div class="cert cert-featured">
-        <strong>TestOut Hybrid Server Pro Certification</strong>
-        <small>Issuing organization: TestOut</small>
-        <small>Area: Hybrid server administration and IT infrastructure</small>
-      </div>
-    </div>
-
-    <div class="cert-group">
-      <h2>Ensign College</h2>
-
-      <div class="cert">
-        <strong>Technical Support Engineer Certificate</strong>
-        <small>Issuing institution: Ensign College</small>
-      </div>
-
-      <div class="cert">
-        <strong>IT Professional Certificate</strong>
-        <small>Issuing institution: Ensign College</small>
-      </div>
-
-      <div class="cert">
-        <strong>System Administration Certificate</strong>
-        <small>Issuing institution: Ensign College</small>
-      </div>
-
-      <div class="cert">
-        <strong>Professional Certificate</strong>
-        <small>Issuing institution: Ensign College</small>
-      </div>
-    </div>
-
-    <div class="cert-group">
-      <h2>BYU–Pathway Worldwide</h2>
-
-      <div class="cert">
-        <strong>PathwayConnect Certificate</strong>
-        <small>Issuing institution: BYU–Pathway Worldwide</small>
-      </div>
-    </div>
-
-    <div class="cert-group">
-      <h2>Cisco Networking Academy (NetAcad)</h2>
-
-      <div class="cert">
-        <strong>Introduction to Cybersecurity</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Network Support and Security</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Network Technician Career Path</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Network Technician Career Path Exam</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Network Addressing and Basic Troubleshooting</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Networking Basics</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-
-      <div class="cert">
-        <strong>Networking Devices and Initial Configuration</strong>
-        <small>Training provider: Cisco Networking Academy</small>
-      </div>
-    </div>
-
-    <div class="cert-group">
-      <h2>Other Professional Training</h2>
-
-      <div class="cert">
-        <strong>Crime Prevention and Self Defence</strong>
-        <small>Training institution: Uganda Police Force</small>
-      </div>
-
-      <div class="cert">
-        <strong>1 Minute Typing Test</strong>
-        <small>Typing skills assessment</small>
-      </div>
-    </div>
-
-    <p>Individual certificate documents and verification links can be added when available.</p>
-
+  <div class="contact-details">
+   <h3>My Contact Information</h3>
+   <p><strong>Phone 1:</strong>
+    <a href="tel:+256753086633">+256 753 086 633</a></p>
+   <p><strong>Phone 2:</strong>
+    <a href="tel:+256394801178">+256 394 801 178</a></p>
+   <p><strong>Email:</strong>
+    <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a></p>
+   <p><strong>LinkedIn:</strong>
     <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-       target="_blank" rel="noopener">
-      View My LinkedIn Profile
-    </a>
+       target="_blank" rel="noopener">View My LinkedIn Profile</a></p>
+   <p><strong>GitHub:</strong>
+    <a href="https://github.com/hamenyagerald"
+       target="_blank" rel="noopener">github.com/hamenyagerald</a></p>
+   <p><strong>Location:</strong> Uganda</p>
+   <a class="btn green" href="https://wa.me/256753086633"
+      target="_blank" rel="noopener">
+    <svg class="whatsapp-icon" aria-hidden="true"><use href="#wa-icon"></use></svg>
+    Chat on WhatsApp
+   </a>
+   <a class="btn" href="#contact">Send a Message</a>
+  </div>
+  <a class="back-home" href="#home">← Back to Home</a>
+ </main>
+</section>
 
-    <div>
-      <a class="back-home" href="#home">← Back to Home</a>
-    </div>
+<!-- EDUCATION: COMPLETE EDUCATIONAL JOURNEY -->
+<section id="education" class="view" hidden>
+ <div class="banner">
+  <h2>My Education</h2>
+  <p>From primary school to university and professional IT studies</p>
+ </div>
+ <main>
 
-  </main>
+  <h2 class="education-heading">University and Higher Education</h2>
+  <div class="grid">
+
+   <div class="card">
+    <span class="tag">In Progress</span>
+    <h3>Ensign College</h3>
+    <p>Information Technology and System Administration studies.</p>
+    <p>Expected completion: next academic term.</p>
+   </div>
+
+   <div class="card">
+    <span class="tag completed">Completed</span>
+    <h3>Kabale University</h3>
+    <p><strong>Bachelor's Degree in Information Technology</strong></p>
+    <p>August 2013 – August 2016</p>
+   </div>
+
+   <div class="card">
+    <span class="tag completed">Completed</span>
+    <h3>Uganda Martyrs University</h3>
+    <p><strong>Certificate in Information Technology</strong></p>
+    <p>August – September 2014</p>
+   </div>
+
+   <div class="card">
+    <span class="tag">Professional Development</span>
+    <h3>BYU–Pathway Worldwide</h3>
+    <p>PathwayConnect Certificate</p>
+   </div>
+
+  </div>
+
+  <h2 class="education-heading">Secondary School Education</h2>
+  <div class="grid">
+
+   <div class="card">
+    <span class="tag completed">A-Level</span>
+    <h3>St. Adolf Tibeyarilwa Muhorro Secondary School</h3>
+    <p><strong>Uganda Advanced Certificate of Education (UACE)</strong></p>
+    <p>November 2011</p>
+    <p>Muhorro, Kagadi, Uganda</p>
+   </div>
+
+   <div class="card">
+    <span class="tag completed">O-Level</span>
+    <h3>Kanaba Secondary School</h3>
+    <p><strong>Uganda Certificate of Education (UCE)</strong></p>
+    <p>November 2009</p>
+   </div>
+
+  </div>
+
+  <h2 class="education-heading">Primary School Education</h2>
+  <div class="grid">
+   <div class="card">
+    <span class="tag completed">Primary Education</span>
+    <h3>Chibumba Primary School</h3>
+    <p><strong>Primary Leaving Examination (PLE)</strong></p>
+    <p>Kisoro District, Uganda</p>
+   </div>
+  </div>
+
+  <a class="back-home" href="#home">← Back to Home</a>
+ </main>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certificates" class="view" hidden>
+ <div class="banner">
+  <h2>Professional Certifications</h2>
+  <p>My qualifications, certificates and issuing institutions</p>
+ </div>
+ <main>
+
+  <div class="cert-group">
+   <h2>TestOut</h2>
+   <div class="cert cert-featured">
+    <strong>TestOut Hybrid Server Pro Certification</strong>
+    <small>Issuing organization: TestOut</small>
+    <small>Area: Hybrid server administration and IT infrastructure</small>
+   </div>
+  </div>
+
+  <div class="cert-group">
+   <h2>Ensign College</h2>
+   <div class="cert">
+    <strong>Technical Support Engineer Certificate</strong>
+    <small>Issuing institution: Ensign College</small>
+   </div>
+   <div class="cert">
+    <strong>IT Professional Certificate</strong>
+    <small>Issuing institution: Ensign College</small>
+   </div>
+   <div class="cert">
+    <strong>System Administration Certificate</strong>
+    <small>Issuing institution: Ensign College</small>
+   </div>
+   <div class="cert">
+    <strong>Professional Certificate</strong>
+    <small>Issuing institution: Ensign College</small>
+   </div>
+  </div>
+
+  <div class="cert-group">
+   <h2>BYU–Pathway Worldwide</h2>
+   <div class="cert">
+    <strong>PathwayConnect Certificate</strong>
+    <small>Institution: BYU–Pathway Worldwide</small>
+   </div>
+  </div>
+
+  <div class="cert-group">
+   <h2>Cisco Networking Academy (NetAcad)</h2>
+   <div class="cert">
+    <strong>Introduction to Cybersecurity</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Network Support and Security</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Network Technician Career Path</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Network Technician Career Path Exam</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Network Addressing and Basic Troubleshooting</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Networking Basics</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+   <div class="cert">
+    <strong>Networking Devices and Initial Configuration</strong>
+    <small>Training provider: Cisco Networking Academy</small>
+   </div>
+  </div>
+
+  <div class="cert-group">
+   <h2>Other Professional Training</h2>
+   <div class="cert">
+    <strong>Crime Prevention and Self Defence</strong>
+    <small>Training institution: Uganda Police Force</small>
+   </div>
+   <div class="cert">
+    <strong>1 Minute Typing Test</strong>
+    <small>Typing skills assessment</small>
+   </div>
+  </div>
+
+  <p>Individual certificate documents and verification links can be added when available.</p>
+  <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
+     target="_blank" rel="noopener">View My LinkedIn Profile</a>
+  <div><a class="back-home" href="#home">← Back to Home</a></div>
+ </main>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="view" hidden>
-  <div class="banner">
-    <h2>Professional Experience</h2>
-    <p>Employment history and professional responsibilities</p>
+ <div class="banner">
+  <h2>Professional Experience</h2>
+  <p>Employment history and professional responsibilities</p>
+ </div>
+ <main>
+  <div class="grid">
+   <div class="card">
+    <h3>Field Assistant</h3>
+    <p><strong>Hands for an African Child</strong></p>
+    <p>2022–Present</p>
+    <p>Field coordination, documentation, reporting and operational support.</p>
+   </div>
+   <div class="card">
+    <h3>Data Entry Clerk</h3>
+    <p><strong>Kigezi Tea Factory</strong></p>
+    <p>2018–2021</p>
+    <p>Data entry, records management, documentation and reporting.</p>
+   </div>
+   <div class="card">
+    <h3>Insurance Representative</h3>
+    <p><strong>ICEA</strong></p>
+    <p>Customer relations, client communication and service support.</p>
+   </div>
+   <div class="card">
+    <h3>Reports Manager Intern</h3>
+    <p><strong>Line Upon Line Co.</strong></p>
+    <p>Reporting, documentation and organizational support.</p>
+   </div>
   </div>
-
-  <main>
-    <div class="grid">
-
-      <div class="card">
-        <h3>Field Assistant</h3>
-        <p><strong>Hands for an African Child</strong></p>
-        <p>2022–Present</p>
-        <p>Field coordination, documentation, reporting and operational support.</p>
-      </div>
-
-      <div class="card">
-        <h3>Data Entry Clerk</h3>
-        <p><strong>Kigezi Tea Factory</strong></p>
-        <p>2018–2021</p>
-        <p>Data entry, records management, documentation and reporting.</p>
-      </div>
-
-      <div class="card">
-        <h3>Insurance Representative</h3>
-        <p><strong>ICEA</strong></p>
-        <p>Customer relations, client communication and service support.</p>
-      </div>
-
-      <div class="card">
-        <h3>Reports Manager Intern</h3>
-        <p><strong>Line Upon Line Co.</strong></p>
-        <p>Reporting, documentation and organizational support.</p>
-      </div>
-
-    </div>
-
-    <a class="back-home" href="#home">← Back to Home</a>
-  </main>
+  <a class="back-home" href="#home">← Back to Home</a>
+ </main>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="view" hidden>
-  <div class="banner">
-    <h2>My IT Projects</h2>
-    <p>Explore my technology projects and digital solutions</p>
+ <div class="banner">
+  <h2>My IT Projects</h2>
+  <p>Technology projects and digital solutions</p>
+ </div>
+ <main>
+  <div class="grid">
+   <div class="card">
+    <h3>IT Capstone Portfolio</h3>
+    <p>My IT capstone project demonstrating practical technology skills.</p>
+    <a class="btn blue"
+       href="https://hamenyagerald.github.io/IT-Capstone-Finalization-Portfolio/"
+       target="_blank" rel="noopener">View Project</a>
+   </div>
+   <div class="card">
+    <h3>Open Hope Charities Website</h3>
+    <p>A website project supporting a charitable organization's digital presence.</p>
+    <a class="btn purple"
+       href="https://hamenyagerald.github.io/Open_Hope_Charities_Organisation/"
+       target="_blank" rel="noopener">View Project</a>
+   </div>
+   <div class="card">
+    <h3>GitHub Repositories</h3>
+    <p>Explore my technical work, repositories and source code.</p>
+    <a class="btn green" href="https://github.com/hamenyagerald"
+       target="_blank" rel="noopener">Explore GitHub</a>
+   </div>
   </div>
-
-  <main>
-    <div class="grid">
-
-      <div class="card">
-        <h3>IT Capstone Portfolio</h3>
-        <p>My IT capstone project demonstrating practical technology skills.</p>
-
-        <a class="btn blue"
-           href="https://hamenyagerald.github.io/IT-Capstone-Finalization-Portfolio/"
-           target="_blank" rel="noopener">
-          View Project
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>Open Hope Charities Website</h3>
-        <p>A website project supporting a charitable organization's digital presence.</p>
-
-        <a class="btn purple"
-           href="https://hamenyagerald.github.io/Open_Hope_Charities_Organisation/"
-           target="_blank" rel="noopener">
-          View Project
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>GitHub Repositories</h3>
-        <p>Explore my other technical work, repositories and source code.</p>
-
-        <a class="btn green"
-           href="https://github.com/hamenyagerald"
-           target="_blank" rel="noopener">
-          Explore GitHub
-        </a>
-      </div>
-
-    </div>
-
-    <a class="back-home" href="#home">← Back to Home</a>
-  </main>
+  <a class="back-home" href="#home">← Back to Home</a>
+ </main>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="view" hidden>
-  <div class="banner">
-    <h2>Contact Me</h2>
-    <p>Let's connect and explore professional opportunities</p>
-  </div>
+ <div class="banner">
+  <h2>Contact Me</h2>
+  <p>Let's connect and explore professional opportunities</p>
+ </div>
+ <main>
+  <div class="grid">
+   <div class="card">
+    <h3>Contact Information</h3>
 
-  <main>
-    <div class="grid">
-
-      <div class="card">
-        <h3>Contact Information</h3>
-
-        <div class="contact-line">
-          <strong>Phone Number 1</strong>
-          <a href="tel:+256753086633">+256 753 086 633</a>
-        </div>
-
-        <div class="contact-line">
-          <strong>Phone Number 2</strong>
-          <a href="tel:+256394801178">+256 394 801 178</a>
-        </div>
-
-        <div class="contact-line">
-          <strong>WhatsApp</strong>
-          <a href="https://wa.me/256753086633"
-             target="_blank" rel="noopener">
-            Chat with Me on WhatsApp
-          </a>
-        </div>
-
-        <div class="contact-line">
-          <strong>Email Address</strong>
-          <a href="mailto:hamenyagerald@gmail.com">
-            hamenyagerald@gmail.com
-          </a>
-        </div>
-
-        <div class="contact-line">
-          <strong>LinkedIn Profile</strong>
-          <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-             target="_blank" rel="noopener">
-            Visit My LinkedIn Profile
-          </a>
-        </div>
-
-        <div class="contact-line">
-          <strong>GitHub</strong>
-          <a href="https://github.com/hamenyagerald"
-             target="_blank" rel="noopener">
-            github.com/hamenyagerald
-          </a>
-        </div>
-
-        <div class="contact-line">
-          <strong>Location</strong>
-          Uganda
-        </div>
-
-        <p>I welcome opportunities in technical support, IT operations, system administration, networking and customer service.</p>
-
-        <a class="btn green"
-           href="https://wa.me/256753086633"
-           target="_blank" rel="noopener">
-          <svg class="whatsapp-icon" aria-hidden="true">
-            <use href="#wa-icon"></use>
-          </svg>
-          Chat on WhatsApp
-        </a>
-
-        <a class="btn blue" href="tel:+256753086633">
-          Call Me
-        </a>
-      </div>
-
-      <div class="card">
-        <h3>Send Me a Message</h3>
-        <p>Complete this form to prepare an email addressed to me.</p>
-
-        <form class="contact-form" id="contactForm">
-
-          <label>Your Name
-            <input type="text"
-                   id="senderName"
-                   required
-                   placeholder="Enter your name">
-          </label>
-
-          <label>Your Email
-            <input type="email"
-                   id="senderEmail"
-                   required
-                   placeholder="Enter your email address">
-          </label>
-
-          <label>Your Message
-            <textarea id="senderMessage"
-                      required
-                      placeholder="Write your message here"></textarea>
-          </label>
-
-          <button type="submit" class="btn blue">
-            Prepare Email
-          </button>
-
-          <p class="note">
-            This opens your email application with a prepared message.
-            Press Send there to deliver it.
-          </p>
-
-        </form>
-      </div>
-
+    <div class="contact-line">
+     <strong>Phone Number 1</strong>
+     <a href="tel:+256753086633">+256 753 086 633</a>
     </div>
 
-    <a class="back-home" href="#home">← Back to Home</a>
-  </main>
+    <div class="contact-line">
+     <strong>Phone Number 2</strong>
+     <a href="tel:+256394801178">+256 394 801 178</a>
+    </div>
+
+    <div class="contact-line">
+     <strong>WhatsApp</strong>
+     <a href="https://wa.me/256753086633"
+        target="_blank" rel="noopener">Chat with Me on WhatsApp</a>
+    </div>
+
+    <div class="contact-line">
+     <strong>Email Address</strong>
+     <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a>
+    </div>
+
+    <div class="contact-line">
+     <strong>LinkedIn Profile</strong>
+     <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
+        target="_blank" rel="noopener">Visit My LinkedIn Profile</a>
+    </div>
+
+    <div class="contact-line">
+     <strong>GitHub</strong>
+     <a href="https://github.com/hamenyagerald"
+        target="_blank" rel="noopener">github.com/hamenyagerald</a>
+    </div>
+
+    <div class="contact-line">
+     <strong>Location</strong>
+     Uganda
+    </div>
+
+    <p>I welcome opportunities in technical support, IT operations, system administration, networking and customer service.</p>
+
+    <a class="btn green" href="https://wa.me/256753086633"
+       target="_blank" rel="noopener">
+     <svg class="whatsapp-icon" aria-hidden="true"><use href="#wa-icon"></use></svg>
+     Chat on WhatsApp
+    </a>
+
+    <a class="btn blue" href="tel:+256753086633">Call Me</a>
+   </div>
+
+   <div class="card">
+    <h3>Send Me a Message</h3>
+    <p>Complete this form to prepare an email addressed to me.</p>
+    <form class="contact-form" id="contactForm">
+     <label>Your Name
+      <input type="text" id="senderName" required placeholder="Enter your name">
+     </label>
+     <label>Your Email
+      <input type="email" id="senderEmail" required placeholder="Enter your email address">
+     </label>
+     <label>Your Message
+      <textarea id="senderMessage" required placeholder="Write your message here"></textarea>
+     </label>
+     <button type="submit" class="btn blue">Prepare Email</button>
+     <p class="note">This opens your email application with a prepared message. Press Send there to deliver it.</p>
+    </form>
+   </div>
+  </div>
+  <a class="back-home" href="#home">← Back to Home</a>
+ </main>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Hamenyimana Gerald. All rights reserved.</p>
-  <p>Information Technology | Technical Support | System Administration</p>
-
-  <p>
-    <a href="tel:+256753086633">+256 753 086 633</a>
-    <a href="tel:+256394801178">+256 394 801 178</a>
-    <a href="https://wa.me/256753086633"
-       target="_blank" rel="noopener">WhatsApp</a>
-    <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
-       target="_blank" rel="noopener">LinkedIn</a>
-  </p>
+ <p>© 2026 Hamenyimana Gerald. All rights reserved.</p>
+ <p>Information Technology | Technical Support | System Administration</p>
+ <p>
+  <a href="tel:+256753086633">+256 753 086 633</a>
+  <a href="tel:+256394801178">+256 394 801 178</a>
+  <a href="https://wa.me/256753086633"
+     target="_blank" rel="noopener">WhatsApp</a>
+  <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/"
+     target="_blank" rel="noopener">LinkedIn</a>
+ </p>
 </footer>
 
 <script>
 const pages=[
-  "home",
-  "about",
-  "education",
-  "certificates",
-  "experience",
-  "projects",
-  "contact"
+ "home","about","education","certificates",
+ "experience","projects","contact"
 ];
 
 function openPage(){
-  const requested=window.location.hash.slice(1).toLowerCase();
-  const selected=pages.includes(requested)?requested:"home";
+ const requested=window.location.hash.slice(1).toLowerCase();
+ const selected=pages.includes(requested)?requested:"home";
 
-  document.querySelectorAll(".view").forEach(section=>{
-    section.hidden=section.id!==selected;
-  });
+ document.querySelectorAll(".view").forEach(section=>{
+  section.hidden=section.id!==selected;
+ });
 
-  document.querySelectorAll("nav a[data-target]").forEach(link=>{
-    const active=link.dataset.target===selected;
-    link.classList.toggle("active",active);
+ document.querySelectorAll("nav a[data-target]").forEach(link=>{
+  const active=link.dataset.target===selected;
+  link.classList.toggle("active",active);
+  if(active){
+   link.setAttribute("aria-current","page");
+  }else{
+   link.removeAttribute("aria-current");
+  }
+ });
 
-    if(active){
-      link.setAttribute("aria-current","page");
-    }else{
-      link.removeAttribute("aria-current");
-    }
-  });
+ document.title=
+  (selected==="home"?"Home":selected.toUpperCase())+
+  " | Hamenyimana Gerald";
 
-  document.title=
-    (selected==="home"?"Home":selected.toUpperCase())+
-    " | Hamenyimana Gerald";
-
-  window.scrollTo(0,0);
+ window.scrollTo(0,0);
 }
 
 window.addEventListener("hashchange",openPage);
 window.addEventListener("pageshow",openPage);
 
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener("click",function(){
-    const destination=this.getAttribute("href").slice(1);
-
-    if(window.location.hash==="#"+destination){
-      openPage();
-    }
-  });
+ link.addEventListener("click",function(){
+  const destination=this.getAttribute("href").slice(1);
+  if(window.location.hash==="#"+destination){
+   openPage();
+  }
+ });
 });
 
 document.getElementById("contactForm").addEventListener("submit",function(event){
-  event.preventDefault();
+ event.preventDefault();
 
-  const name=document.getElementById("senderName").value.trim();
-  const email=document.getElementById("senderEmail").value.trim();
-  const message=document.getElementById("senderMessage").value.trim();
+ const name=document.getElementById("senderName").value.trim();
+ const email=document.getElementById("senderEmail").value.trim();
+ const message=document.getElementById("senderMessage").value.trim();
 
-  if(!name||!email||!message)return;
+ if(!name||!email||!message)return;
 
-  const subject=encodeURIComponent("Portfolio Contact from "+name);
-  const body=encodeURIComponent(
-    "Name: "+name+"\n"+
-    "Email: "+email+"\n\n"+
-    "Message:\n"+message
-  );
+ const subject=encodeURIComponent("Portfolio Contact from "+name);
+ const body=encodeURIComponent(
+  "Name: "+name+"\n"+
+  "Email: "+email+"\n\n"+
+  "Message:\n"+message
+ );
 
-  window.location.href=
-    "mailto:hamenyagerald@gmail.com?subject="+
-    subject+"&body="+body;
+ window.location.href=
+  "mailto:hamenyagerald@gmail.com?subject="+
+  subject+"&body="+body;
 });
 
 openPage();
 </script>
-
 </body>
 </html>
+
 
 
 
