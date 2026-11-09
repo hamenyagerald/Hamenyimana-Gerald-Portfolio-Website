@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional IT portfolio of Hamenyimana Gerald">
+<meta name="description" content="Hamenyimana Gerald - Professional IT Portfolio">
 <title>Hamenyimana Gerald | Professional IT Portfolio</title>
 
 <style>
@@ -16,9 +16,7 @@
   --text:#17334d;
 }
 
-* {
-  box-sizing:border-box;
-}
+* { box-sizing:border-box; }
 
 body {
   margin:0;
@@ -28,20 +26,15 @@ body {
   line-height:1.7;
 }
 
-[hidden] {
-  display:none!important;
-}
+[hidden] { display:none!important; }
 
-a {
-  color:#115a95;
-}
+a { color:#115a95; }
+button,input,textarea { font:inherit; }
+a,button { transition:.2s ease; }
 
-button,input,textarea {
-  font:inherit;
-}
-
-a,button {
-  transition:.2s ease;
+a:focus-visible,button:focus-visible {
+  outline:3px solid #edaa32;
+  outline-offset:3px;
 }
 
 header {
@@ -68,6 +61,7 @@ header {
   place-items:center;
   font-size:24px;
   font-weight:bold;
+  flex-shrink:0;
 }
 
 .brand h1 {
@@ -100,8 +94,7 @@ nav a {
   border:1px solid #aacded;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover,nav a.active {
   background:var(--navy);
   color:white;
 }
@@ -128,9 +121,7 @@ nav a.active {
   margin:15px 0;
 }
 
-.hero h2 span {
-  color:var(--gold);
-}
+.hero h2 span { color:var(--gold); }
 
 .hero p {
   font-size:17px;
@@ -185,20 +176,9 @@ nav a.active {
   cursor:pointer;
 }
 
-.btn.blue {
-  background:#17649e;
-  color:white;
-}
-
-.btn.green {
-  background:#087e61;
-  color:white;
-}
-
-.btn.purple {
-  background:#7652aa;
-  color:white;
-}
+.btn.blue { background:#17649e;color:white; }
+.btn.green { background:#087e61;color:white; }
+.btn.purple { background:#7652aa;color:white; }
 
 .btn:hover,.back-home:hover {
   filter:brightness(.9);
@@ -261,14 +241,8 @@ main {
   overflow-wrap:anywhere;
 }
 
-.card h3 {
-  margin:0 0 10px;
-  color:#103b63;
-}
-
-.card p {
-  margin:9px 0;
-}
+.card h3 { margin:0 0 10px;color:#103b63; }
+.card p { margin:9px 0; }
 
 .grid>.card:nth-child(5n+1) {
   background:#dceaff;
@@ -295,58 +269,25 @@ main {
   border-left-color:#ca5c7b;
 }
 
-.card-icon {
-  font-size:32px;
-  margin-bottom:9px;
-}
+.card-icon { font-size:32px;margin-bottom:9px; }
 
-#about {
-  background:linear-gradient(135deg,#d3edf4,#e7f7f9);
-}
+#about { background:linear-gradient(135deg,#d3edf4,#e7f7f9); }
+#about .banner { background:linear-gradient(120deg,#12517c,#138b92); }
 
-#about .banner {
-  background:linear-gradient(120deg,#12517c,#138b92);
-}
+#education { background:linear-gradient(135deg,#d4e2fc,#eaf2ff); }
+#education .banner { background:linear-gradient(120deg,#153c73,#347bb8); }
 
-#education {
-  background:linear-gradient(135deg,#d4e2fc,#eaf2ff);
-}
+#certificates { background:linear-gradient(135deg,#d1eee0,#e7f8ef); }
+#certificates .banner { background:linear-gradient(120deg,#11584e,#22947e); }
 
-#education .banner {
-  background:linear-gradient(120deg,#153c73,#347bb8);
-}
+#experience { background:linear-gradient(135deg,#e1d6f7,#f1eafb); }
+#experience .banner { background:linear-gradient(120deg,#463276,#7753a6); }
 
-#certificates {
-  background:linear-gradient(135deg,#d1eee0,#e7f8ef);
-}
+#projects { background:linear-gradient(135deg,#d7dfff,#edf0ff); }
+#projects .banner { background:linear-gradient(120deg,#29356c,#4e64ad); }
 
-#certificates .banner {
-  background:linear-gradient(120deg,#11584e,#22947e);
-}
-
-#experience {
-  background:linear-gradient(135deg,#e1d6f7,#f1eafb);
-}
-
-#experience .banner {
-  background:linear-gradient(120deg,#463276,#7753a6);
-}
-
-#projects {
-  background:linear-gradient(135deg,#d7dfff,#edf0ff);
-}
-
-#projects .banner {
-  background:linear-gradient(120deg,#29356c,#4e64ad);
-}
-
-#contact {
-  background:linear-gradient(135deg,#f8dfbf,#fff0db);
-}
-
-#contact .banner {
-  background:linear-gradient(120deg,#854b28,#bd7a39);
-}
+#contact { background:linear-gradient(135deg,#f8dfbf,#fff0db); }
+#contact .banner { background:linear-gradient(120deg,#854b28,#bd7a39); }
 
 /* GET TO KNOW ME */
 
@@ -363,15 +304,8 @@ main {
   letter-spacing:1px;
 }
 
-.get-intro h2 {
-  color:white;
-  margin:7px 0;
-}
-
-.get-intro p {
-  margin:0;
-  color:#e9f2fc;
-}
+.get-intro h2 { color:white;margin:7px 0; }
+.get-intro p { margin:0;color:#e9f2fc; }
 
 .know-grid {
   display:grid;
@@ -386,35 +320,14 @@ main {
   min-height:150px;
 }
 
-.know-card h3 {
-  margin:7px 0;
-  color:#162e45;
-}
+.know-card h3 { margin:7px 0;color:#162e45; }
+.know-card p { margin:0;font-size:14px; }
+.know-icon { font-size:27px; }
 
-.know-card p {
-  margin:0;
-  font-size:14px;
-}
-
-.know-icon {
-  font-size:27px;
-}
-
-.journey {
-  background:#dceaff;
-}
-
-.family {
-  background:#ffe5d3;
-}
-
-.passion {
-  background:#d4f0e7;
-}
-
-.hobbies {
-  background:#e9ddfa;
-}
+.journey { background:#dceaff; }
+.family { background:#ffe5d3; }
+.passion { background:#d4f0e7; }
+.hobbies { background:#e9ddfa; }
 
 .quote {
   background:#143c63;
@@ -452,6 +365,33 @@ main {
   flex-shrink:0;
 }
 
+.family-detail {
+  background:#ffe8d3;
+  border:2px solid #e6b78c;
+  border-left:8px solid #b76b35;
+  border-radius:17px;
+  padding:27px;
+  margin-top:20px;
+}
+
+.family-detail h3 {
+  color:#82421f;
+  margin-top:0;
+}
+
+.family-member {
+  background:#fff5e9;
+  padding:13px 17px;
+  border-radius:10px;
+  margin:11px 0;
+  border-left:5px solid #d78b45;
+}
+
+.family-member strong {
+  display:block;
+  color:#63381e;
+}
+
 .badge {
   display:inline-block;
   background:#145e96;
@@ -462,17 +402,10 @@ main {
   font-weight:bold;
 }
 
-.badge.green {
-  background:#127557;
-}
+.badge.green { background:#127557; }
+.badge.purple { background:#7552aa; }
 
-.badge.purple {
-  background:#7552aa;
-}
-
-.cert-group {
-  margin:30px 0;
-}
+.cert-group { margin:30px 0; }
 
 .cert-group h2 {
   background:#b7e4d0;
@@ -506,15 +439,8 @@ main {
   border-left-color:#168a76;
 }
 
-.cert strong {
-  display:block;
-  color:#103b63;
-}
-
-.cert small {
-  display:block;
-  color:#465e73;
-}
+.cert strong { display:block;color:#103b63; }
+.cert small { display:block;color:#465e73; }
 
 .featured {
   background:#c7dfff;
@@ -549,10 +475,7 @@ main {
   top:25px;
 }
 
-.timeline-item h3 {
-  color:#463276;
-  margin:8px 0;
-}
+.timeline-item h3 { color:#463276;margin:8px 0; }
 
 .contact-line {
   padding:12px 0;
@@ -579,9 +502,7 @@ main {
   gap:15px;
 }
 
-.contact-form label {
-  font-weight:bold;
-}
+.contact-form label { font-weight:bold; }
 
 .contact-form input,
 .contact-form textarea {
@@ -600,17 +521,15 @@ main {
   resize:vertical;
 }
 
-.note {
-  font-size:13px;
-  color:#526a80;
-}
+.note { font-size:13px;color:#526a80; }
 
-.cv-status {
-  background:#ffedc8;
-  border-left:6px solid #bd8725;
-  padding:18px;
-  border-radius:12px;
-  margin-top:15px;
+.cv-box {
+  background:#d2f0e6;
+  border:2px solid #99d5c0;
+  border-left:7px solid #087e61;
+  padding:22px;
+  border-radius:14px;
+  margin-top:20px;
 }
 
 footer {
@@ -630,53 +549,24 @@ footer a {
   text-decoration:none;
 }
 
+@media(min-width:900px) {
+  .know-grid { grid-template-columns:repeat(4,minmax(0,1fr)); }
+}
+
 @media(max-width:750px) {
-  .hero-inner {
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .profile-photo {
-    max-width:275px;
-    height:325px;
-  }
-
-  .hero-tags {
-    justify-content:center;
-  }
-
-  .about-intro {
-    flex-direction:column;
-    text-align:center;
-  }
+  .hero-inner { grid-template-columns:1fr;text-align:center; }
+  .profile-photo { max-width:275px;height:325px; }
+  .hero-tags { justify-content:center; }
+  .about-intro { flex-direction:column;text-align:center; }
 }
 
 @media(max-width:500px) {
-  .know-grid {
-    grid-template-columns:1fr 1fr;
-    gap:9px;
-  }
-
-  .know-card {
-    padding:14px;
-  }
-
-  .know-card h3 {
-    font-size:15px;
-  }
-
-  .know-card p {
-    font-size:12px;
-  }
-
-  .brand h1 {
-    font-size:17px;
-  }
-
-  nav a {
-    font-size:11px;
-    padding:8px 10px;
-  }
+  .know-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:9px; }
+  .know-card { padding:14px; }
+  .know-card h3 { font-size:15px; }
+  .know-card p { font-size:12px; }
+  .brand h1 { font-size:17px; }
+  nav a { font-size:11px;padding:8px 10px; }
 }
 </style>
 </head>
@@ -738,10 +628,17 @@ footer a {
         <a class="btn" href="#about">Get to Know Me</a>
         <a class="btn blue" href="#projects">Explore Projects</a>
         <a class="btn green" href="#contact">Contact Me</a>
+
         <a class="btn green"
            href="https://wa.me/256753086633"
            target="_blank" rel="noopener">
-          WhatsApp Me
+          🟢 WhatsApp Me
+        </a>
+
+        <a class="btn purple"
+           href="Gerald_Hamenyimana_CV.pdf"
+           download>
+          📄 Download My CV
         </a>
       </div>
 
@@ -765,8 +662,6 @@ footer a {
 
   <main>
 
-    <!-- GET TO KNOW ME -->
-
     <div class="get-intro">
       <small>GET TO KNOW ME</small>
       <h2>More Than an IT Professional</h2>
@@ -782,37 +677,25 @@ footer a {
       <div class="know-card journey">
         <div class="know-icon">🎓</div>
         <h3>My Journey</h3>
-        <p>
-          From Kisoro to higher education
-          and professional IT certifications.
-        </p>
+        <p>From Kisoro to higher education and professional IT certifications.</p>
       </div>
 
       <div class="know-card family">
-        <div class="know-icon">♡</div>
+        <div class="know-icon">❤️</div>
         <h3>My Family</h3>
-        <p>
-          A husband and proud father
-          of three children.
-        </p>
+        <p>A husband and proud father of three children.</p>
       </div>
 
       <div class="know-card passion">
         <div class="know-icon">💻</div>
         <h3>My Passion</h3>
-        <p>
-          Computers, technology, troubleshooting
-          and continuous learning.
-        </p>
+        <p>Computers, technology, troubleshooting and continuous learning.</p>
       </div>
 
       <div class="know-card hobbies">
         <div class="know-icon">🏊</div>
         <h3>My Hobbies</h3>
-        <p>
-          Swimming, reading newspapers
-          and discovering new ideas.
-        </p>
+        <p>Swimming, reading newspapers and discovering new ideas.</p>
       </div>
 
     </div>
@@ -821,8 +704,6 @@ footer a {
       "Apart from my family, computers are my second love."
       <small>— Hamenyimana Gerald</small>
     </div>
-
-    <!-- INTRODUCTION -->
 
     <h2 class="section-heading">Who I Am</h2>
 
@@ -836,8 +717,8 @@ footer a {
         <h3>Hello, I'm Hamenyimana Gerald</h3>
 
         <p>
-          I am an Information Technology professional
-          based in Uganda, with experience in data management,
+          I am an Information Technology professional based
+          in Uganda, with experience in data management,
           customer service, reporting and field operations.
         </p>
 
@@ -855,8 +736,6 @@ footer a {
       </div>
 
     </div>
-
-    <!-- MY STORY -->
 
     <h2 class="section-heading">My Personal Story</h2>
 
@@ -891,63 +770,74 @@ footer a {
       </p>
     </div>
 
-    <!-- FAMILY -->
+    <!-- FAMILY DETAILS -->
 
     <h2 class="section-heading">My Family and Personal Life</h2>
+
+    <div class="family-detail">
+
+      <h3>👨‍👩‍👧‍👦 My Beautiful Family</h3>
+
+      <p>
+        I am happily married to my wife,
+        <strong>Turyagumanawe Winnie</strong>.
+        Together, we are blessed with three wonderful children.
+      </p>
+
+      <div class="family-member">
+        <strong>❤️ My Wife</strong>
+        Turyagumanawe Winnie
+      </div>
+
+      <div class="family-member">
+        <strong>🌟 My First Child</strong>
+        Twinamatsiko Valentine — 7 years old
+      </div>
+
+      <div class="family-member">
+        <strong>🌟 My Second Child</strong>
+        Amanya Heb Elton — 4 years old
+      </div>
+
+      <div class="family-member">
+        <strong>🌟 My Third Child</strong>
+        Amanya Vanessa — 1½ years old
+      </div>
+
+      <p>
+        My family is my greatest source of inspiration,
+        love and motivation. They encourage me to continue
+        working hard, learning and building a better future.
+      </p>
+
+    </div>
+
+    <h2 class="section-heading">My Hobbies and Interests</h2>
 
     <div class="grid">
 
       <div class="card">
-        <div class="card-icon">👨‍👩‍👧‍👦</div>
-        <h3>My Family</h3>
-
-        <p>
-          I am happily married to
-          <strong>Turyagumanawe Winnie</strong>,
-          and together we are blessed with three children.
-        </p>
-
-        <p>
-          My family gives me love, encouragement
-          and motivation as I continue growing
-          personally and professionally.
-        </p>
+        <div class="card-icon">🏊</div>
+        <h3>Swimming</h3>
+        <p>I enjoy swimming as a way of staying active and refreshed.</p>
       </div>
 
       <div class="card">
-        <div class="card-icon">🏊</div>
-        <h3>My Hobbies</h3>
-
-        <p>
-          I enjoy swimming and reading newspapers.
-        </p>
-
-        <p>
-          Swimming helps me stay active,
-          while reading newspapers keeps me informed
-          about current affairs and developments.
-        </p>
+        <div class="card-icon">📰</div>
+        <h3>Reading Newspapers</h3>
+        <p>I enjoy keeping informed about current affairs and developments.</p>
       </div>
 
       <div class="card">
         <div class="card-icon">💻</div>
-        <h3>My Passion for Computers</h3>
-
+        <h3>Computers and Technology</h3>
         <p>
           Computers are my second love after my family.
-        </p>
-
-        <p>
-          I enjoy exploring computer systems,
-          troubleshooting problems,
-          learning new technologies
-          and improving my technical skills.
+          I enjoy learning, exploring and solving technical problems.
         </p>
       </div>
 
     </div>
-
-    <!-- SKILLS -->
 
     <h2 class="section-heading">My Professional Skills</h2>
 
@@ -991,8 +881,6 @@ footer a {
 
     </div>
 
-    <!-- CAREER GOALS -->
-
     <h2 class="section-heading">My Career Goals</h2>
 
     <div class="card">
@@ -1016,8 +904,6 @@ footer a {
         through practical solutions.
       </p>
     </div>
-
-    <!-- VALUES -->
 
     <h2 class="section-heading">My Professional Values</h2>
 
@@ -1546,26 +1432,33 @@ footer a {
 
         </form>
 
+        <!-- CV SECTION -->
+
         <h3>My Curriculum Vitae (CV)</h3>
 
-        <div class="cv-status">
-          <strong>CV PDF — Coming Soon</strong>
+        <div class="cv-box">
+
+          <h3>📄 My Professional CV</h3>
+
           <p>
-            My professional CV will be available
-            for download after we complete it.
+            Download my modern two-page professional CV
+            to learn more about my qualifications,
+            technical skills, certifications
+            and professional experience.
           </p>
+
+          <a class="btn purple"
+             href="Gerald_Hamenyimana_CV.pdf"
+             download>
+            Download My CV (PDF)
+          </a>
+
+          <p class="note">
+            The PDF must be uploaded to the same
+            GitHub repository as index.html.
+          </p>
+
         </div>
-
-        <!--
-        AFTER UPLOADING THE CV PDF TO GITHUB,
-        REPLACE THE CV STATUS ABOVE WITH:
-
-        <a class="btn purple"
-           href="Gerald_Hamenyimana_CV.pdf"
-           download>
-          Download My CV (PDF)
-        </a>
-        -->
 
       </div>
 
@@ -1700,6 +1593,7 @@ openPage();
 
 </body>
 </html>
+
 
 
 
