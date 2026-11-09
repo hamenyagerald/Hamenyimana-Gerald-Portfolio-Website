@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +9,44 @@
 <title>Hamenyimana Gerald | Professional IT Portfolio</title>
 
 <style>
-:root {
+:root{
   --navy:#0a213b;
   --blue:#145e96;
   --gold:#ffcb72;
   --green:#087e61;
-  --text:#20374c;
+  --ink:#17334d;
 }
-* {box-sizing:border-box}
-html {scroll-behavior:auto}
-body {
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   background:#dceaf4;
-  color:var(--text);
+  color:var(--ink);
   line-height:1.7;
 }
-[hidden] {display:none!important}
-a {color:#125b96}
-button,input,textarea {font:inherit}
-a,button {transition:all .2s ease}
-a:focus-visible,button:focus-visible {
+[hidden]{display:none!important}
+a{color:#104d83}
+button,input,textarea{font:inherit}
+a,button{transition:all .2s ease}
+a:focus-visible,button:focus-visible{
   outline:3px solid #f0a500;
   outline-offset:3px;
 }
 
 /* HEADER */
-header {
-  background:linear-gradient(110deg,#ffffff,#e9f3ff);
+header{
+  background:linear-gradient(110deg,#fff,#e6f1ff);
   padding:18px 6%;
   border-bottom:4px solid var(--gold);
 }
-.brand {
+.brand{
   display:flex;
   align-items:center;
   gap:14px;
-  margin-bottom:17px;
+  margin-bottom:18px;
 }
-.logo {
+.logo{
   background:var(--navy);
   color:var(--gold);
   width:58px;
@@ -55,47 +56,45 @@ header {
   place-items:center;
   font-size:23px;
   font-weight:bold;
-  flex-shrink:0;
   border:3px solid #d9ac55;
+  flex-shrink:0;
 }
-.brand h1 {
+.brand h1{
   color:var(--navy);
   font-size:22px;
   margin:0;
   line-height:1.3;
 }
-.brand p {
+.brand p{
   color:#536f86;
   font-size:12px;
   letter-spacing:2px;
   margin:0;
 }
-nav {
+nav{
   display:flex;
   flex-wrap:wrap;
   gap:9px;
 }
-nav a {
+nav a{
   display:inline-block;
   text-decoration:none;
   color:#123b5c;
-  background:#dcecff;
-  border:1px solid #b5d2ef;
-  border-radius:8px;
+  background:#cce4ff;
+  border:1px solid #9ac5ef;
+  border-radius:9px;
   padding:9px 13px;
   font-size:12px;
   font-weight:bold;
-  letter-spacing:.5px;
 }
-nav a:hover,nav a.active {
+nav a:hover,nav a.active{
   background:#103c64;
-  color:#ffffff;
+  color:#fff;
   border-color:#103c64;
-  box-shadow:0 3px 10px #102d4525;
 }
 
 /* HOME */
-.hero {
+.hero{
   background:linear-gradient(120deg,#081c34,#14517c);
   color:white;
   padding:75px 7%;
@@ -103,7 +102,7 @@ nav a:hover,nav a.active {
   display:flex;
   align-items:center;
 }
-.hero-inner {
+.hero-inner{
   width:100%;
   max-width:1150px;
   margin:auto;
@@ -112,24 +111,21 @@ nav a:hover,nav a.active {
   gap:45px;
   align-items:center;
 }
-.hero h2 {
-  color:white;
+.hero h2{
+  color:#fff;
   font-size:clamp(35px,5vw,60px);
   line-height:1.15;
   margin:15px 0;
 }
-.hero h2 span {color:var(--gold)}
-.hero p {
-  font-size:17px;
-  color:#e7f2fb;
-}
-.eyebrow {
+.hero h2 span{color:var(--gold)}
+.hero p{font-size:17px;color:#e7f2fb}
+.eyebrow{
   color:var(--gold);
   font-size:13px;
   font-weight:bold;
   letter-spacing:2px;
 }
-.profile-photo {
+.profile-photo{
   width:100%;
   max-width:350px;
   height:410px;
@@ -142,85 +138,98 @@ nav a:hover,nav a.active {
   margin:auto;
 }
 
-/* SECTION BACKGROUNDS */
-.banner {
+/* PAGE BACKGROUNDS */
+.banner{
   text-align:center;
   padding:55px 7%;
-  color:white;
+  color:#fff;
 }
-.banner h2 {
-  color:white;
+.banner h2{
+  color:#fff;
   font-size:clamp(30px,5vw,46px);
   margin:0;
 }
-.banner p {margin:8px 0;color:#f0f6fc}
+.banner p{margin:8px 0;color:#f0f6fc}
 
-#about {background:linear-gradient(135deg,#d3ecf4,#e6f8f7)}
-#about .banner {background:linear-gradient(120deg,#12517c,#138b92)}
+#about{background:linear-gradient(135deg,#ccebf2,#e4f7f7)}
+#about .banner{background:linear-gradient(120deg,#12517c,#138b92)}
 
-#education {background:linear-gradient(135deg,#d6e5ff,#e8f2ff)}
-#education .banner {background:linear-gradient(120deg,#143a70,#347bb8)}
+#education{background:linear-gradient(135deg,#cfdefb,#e8f1ff)}
+#education .banner{background:linear-gradient(120deg,#143a70,#347bb8)}
 
-#certificates {background:linear-gradient(135deg,#d2efe4,#e4f8f0)}
-#certificates .banner {background:linear-gradient(120deg,#11584e,#22947e)}
+#certificates{background:linear-gradient(135deg,#ccecdf,#e5f8ed)}
+#certificates .banner{background:linear-gradient(120deg,#11584e,#22947e)}
 
-#experience {background:linear-gradient(135deg,#e5dafa,#f3eaff)}
-#experience .banner {background:linear-gradient(120deg,#463276,#7753a6)}
+#experience{background:linear-gradient(135deg,#dfd1f7,#f0e7fc)}
+#experience .banner{background:linear-gradient(120deg,#463276,#7753a6)}
 
-#projects {background:linear-gradient(135deg,#dbe2ff,#eef0ff)}
-#projects .banner {background:linear-gradient(120deg,#29356c,#4e64ad)}
+#projects{background:linear-gradient(135deg,#d4ddff,#eceeff)}
+#projects .banner{background:linear-gradient(120deg,#29356c,#4e64ad)}
 
-#contact {background:linear-gradient(135deg,#fae4cc,#fff0db)}
-#contact .banner {background:linear-gradient(120deg,#854b28,#bd7a39)}
+#contact{background:linear-gradient(135deg,#f8dfbf,#fff0db)}
+#contact .banner{background:linear-gradient(120deg,#854b28,#bd7a39)}
 
-main {
+main{
   max-width:1120px;
   margin:auto;
   padding:48px 20px 80px;
   min-height:45vh;
 }
-h2,h3 {color:#103657}
-.grid {
+h2,h3{color:#103657}
+.grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:22px;
   margin-top:25px;
 }
-.card {
-  border-radius:15px;
-  padding:27px;
-  box-shadow:0 7px 24px #0b29411a;
-  border-left:6px solid #3b82b6;
-  background:#e0efff;
-}
-.card h3 {margin:0 0 10px;color:#123d65}
-.card p {margin:8px 0}
 
-/* COLORFUL CARDS ON EVERY PAGE */
-.grid > .card:nth-child(5n+1) {
-  background:#dceaff;
+/* ALL CARDS HAVE REAL BACKGROUND COLORS */
+.card{
+  background:#dceaff!important;
+  border-radius:16px;
+  padding:27px;
+  border:2px solid #a8c8ef;
+  border-left:7px solid #2864c5;
+  box-shadow:0 7px 22px #0b294119;
+}
+.card h3{
+  color:#123d65;
+  margin:0 0 10px;
+}
+.card p{margin:8px 0;color:#243b53}
+
+.grid>.card:nth-child(5n+1){
+  background:#d6e7ff!important;
+  border-color:#9cbeee;
   border-left-color:#2864c5;
 }
-.grid > .card:nth-child(5n+2) {
-  background:#e8dcff;
+.grid>.card:nth-child(5n+2){
+  background:#e8d9ff!important;
+  border-color:#c5a8e9;
   border-left-color:#8151ba;
 }
-.grid > .card:nth-child(5n+3) {
-  background:#fff0cb;
-  border-left-color:#c18b23;
+.grid>.card:nth-child(5n+3){
+  background:#ffebc2!important;
+  border-color:#e4c27a;
+  border-left-color:#b8841f;
 }
-.grid > .card:nth-child(5n+4) {
-  background:#d4f1e8;
+.grid>.card:nth-child(5n+4){
+  background:#ccefe4!important;
+  border-color:#91d1bf;
   border-left-color:#188a78;
 }
-.grid > .card:nth-child(5n+5) {
-  background:#ffe0e8;
+.grid>.card:nth-child(5n+5){
+  background:#ffdae5!important;
+  border-color:#e5a7ba;
   border-left-color:#c64f79;
 }
 
-/* BUTTONS AND ALL CLICKABLE LINKS */
-.btn,.back-home {
-  display:inline-block;
+/* BUTTONS */
+.btn,.back-home{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
   padding:12px 22px;
   border-radius:9px;
   border:0;
@@ -230,46 +239,53 @@ h2,h3 {color:#103657}
   margin:8px 8px 8px 0;
   box-shadow:0 4px 12px #0002;
 }
-.btn {background:var(--gold);color:var(--navy)}
-.btn.blue {background:#145e96;color:white}
-.btn.green {background:#087e61;color:white}
-.btn.purple {background:#63429a;color:white}
-.btn:hover,.back-home:hover {
+.btn{background:var(--gold);color:var(--navy)}
+.btn.blue{background:#145e96;color:#fff}
+.btn.green{background:#087e61;color:#fff}
+.btn.purple{background:#63429a;color:#fff}
+.btn:hover,.back-home:hover{
   filter:brightness(.9);
   transform:translateY(-2px);
 }
-.back-home {
+.back-home{
   margin-top:35px;
   background:var(--navy);
-  color:white;
+  color:#fff;
+}
+.whatsapp-icon{
+  width:23px;
+  height:23px;
+  fill:currentColor;
+  flex-shrink:0;
 }
 
-/* BACKGROUNDS FOR ALL CONTENT LINKS */
-main a:not(.btn):not(.back-home) {
+/* EVERY ORDINARY LINK HAS A BACKGROUND */
+main a:not(.btn):not(.back-home){
   display:inline-block;
-  background:#cce4ff;
-  color:#104b80;
-  border:1px solid #a8caeb;
+  background:#badbff;
+  color:#073d72;
+  border:1px solid #85b5e5;
   border-radius:8px;
   padding:6px 12px;
   font-weight:bold;
   text-decoration:none;
   overflow-wrap:anywhere;
 }
-main a:not(.btn):not(.back-home):hover {
-  background:#a8d1ff;
-  color:#062c52;
+main a:not(.btn):not(.back-home):hover{
+  background:#95c5f7;
+  color:#082e55;
 }
 
-/* ABOUT ME */
-.about-intro {
+/* ABOUT */
+.about-intro{
   display:flex;
   gap:30px;
   align-items:center;
-  background:#d8edfa;
-  border-left-color:#138b92;
+  background:#cceaf5!important;
+  border-color:#8ec8d6!important;
+  border-left-color:#138b92!important;
 }
-.about-photo {
+.about-photo{
   width:210px;
   height:250px;
   object-fit:cover;
@@ -278,191 +294,187 @@ main a:not(.btn):not(.back-home):hover {
   border-radius:15px;
   flex-shrink:0;
 }
-.skill-card {text-align:center}
-.skill-card .symbol {
-  font-size:32px;
-  margin-bottom:8px;
-}
-.contact-details {
+.skill-card{text-align:center}
+.skill-card .symbol{font-size:32px;margin-bottom:8px}
+.contact-details{
   background:linear-gradient(120deg,#103657,#155c78);
-  color:white;
-  border-radius:15px;
+  color:#fff;
+  border-radius:16px;
   padding:27px;
   margin-top:25px;
 }
-.contact-details h3 {color:var(--gold)}
-.contact-details p {margin:12px 0}
-.contact-details a:not(.btn) {
-  background:#28628a !important;
-  color:#ffffff !important;
-  border-color:#4d91b9 !important;
+.contact-details h3{color:var(--gold)}
+.contact-details p{margin:12px 0}
+.contact-details a:not(.btn){
+  background:#28628a!important;
+  color:#fff!important;
+  border-color:#4d91b9!important;
 }
-.contact-details a:not(.btn):hover {
-  background:#367eab !important;
+.contact-details a:not(.btn):hover{
+  background:#367eab!important;
 }
-.contact-details .btn {color:white}
 
-/* EDUCATION TAGS */
-.tag {
+/* EDUCATION */
+.tag{
   display:inline-block;
   padding:5px 13px;
   border-radius:20px;
   background:#135e9a;
-  color:white;
+  color:#fff;
   font-size:12px;
   font-weight:bold;
 }
+.tag.completed{background:#126d55}
 
-/* CERTIFICATE GROUPS */
-.cert-group {margin:28px 0}
-.cert-group h2 {
+/* CERTIFICATES - COLORED INDIVIDUAL BOXES */
+.cert-group{margin:28px 0}
+.cert-group h2{
   color:#105c50;
-  background:#c1e6d7;
-  padding:12px 18px;
+  background:#b6e2d0;
+  padding:13px 18px;
   border-radius:10px;
-  border-left:5px solid #22947e;
+  border-left:6px solid #22947e;
 }
-.cert {
-  background:#dceaff;
-  border-left:6px solid #2864c5;
-  border-radius:13px;
-  padding:19px 23px;
-  margin:13px 0;
-  box-shadow:0 4px 14px #0b294115;
-  transition:transform .2s,box-shadow .2s;
+.cert{
+  background:#d6e7ff!important;
+  border:2px solid #a7c6ee;
+  border-left:7px solid #2864c5;
+  border-radius:14px;
+  padding:20px 24px;
+  margin:14px 0;
+  box-shadow:0 5px 16px #0b294117;
 }
-.cert:nth-of-type(5n+1) {
-  background:#dceaff;
+.cert:nth-of-type(5n+1){
+  background:#d6e7ff!important;
+  border-color:#a7c6ee;
   border-left-color:#2864c5;
 }
-.cert:nth-of-type(5n+2) {
-  background:#e9deff;
+.cert:nth-of-type(5n+2){
+  background:#e8d9ff!important;
+  border-color:#c9a9eb;
   border-left-color:#8151ba;
 }
-.cert:nth-of-type(5n+3) {
-  background:#fff0ce;
-  border-left-color:#c18b23;
+.cert:nth-of-type(5n+3){
+  background:#ffebc2!important;
+  border-color:#e6c887;
+  border-left-color:#b8841f;
 }
-.cert:nth-of-type(5n+4) {
-  background:#d8f2ed;
+.cert:nth-of-type(5n+4){
+  background:#ccefe4!important;
+  border-color:#98d4c1;
   border-left-color:#188a78;
 }
-.cert:nth-of-type(5n+5) {
-  background:#ffe2e9;
+.cert:nth-of-type(5n+5){
+  background:#ffdae5!important;
+  border-color:#e9aabb;
   border-left-color:#c64f79;
 }
-.cert strong {
+.cert strong{
   display:block;
   color:#122e4c;
   font-size:17px;
 }
-.cert small {
+.cert small{
   display:block;
   color:#39536c;
   font-size:13px;
   margin-top:4px;
 }
-.cert:hover {
-  transform:translateY(-2px);
-  box-shadow:0 9px 20px #0b294125;
+.cert-featured{
+  background:linear-gradient(110deg,#bcd9ff,#d9e9ff)!important;
+  border:2px solid #729fda!important;
+  border-left:8px solid #145e96!important;
+  padding:26px;
 }
-.cert-featured {
-  background:linear-gradient(120deg,#cbdfff,#e4edff)!important;
-  border-left-color:#145e96!important;
-  border:2px solid #8db5ed;
-  border-left-width:7px;
-  padding:25px;
-}
-.cert-featured strong {
-  font-size:21px;
+.cert-featured strong{
   color:#103c70;
+  font-size:21px;
 }
 
-/* CONTACT PAGE */
-.contact-line {
+/* CONTACT */
+.contact-line{
   padding:13px 0;
-  border-bottom:1px solid #c5d7e9;
+  border-bottom:1px solid #a7c5df;
   overflow-wrap:anywhere;
 }
-.contact-line strong {
+.contact-line strong{
   display:block;
   color:#173b5b;
   margin-bottom:5px;
 }
-.contact-form {display:grid;gap:15px}
-.contact-form label {
+.contact-form{display:grid;gap:15px}
+.contact-form label{
   color:#183a54;
   font-weight:bold;
 }
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea{
   display:block;
   width:100%;
   padding:12px;
-  border:1px solid #a9c4da;
-  border-radius:8px;
+  border:2px solid #9bbbd9;
+  border-radius:9px;
   margin-top:5px;
-  background:#f4f9ff;
+  background:#e4f1ff;
   color:#182f44;
 }
-.contact-form textarea {
+.contact-form textarea{
   min-height:145px;
   resize:vertical;
 }
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus{
   outline:2px solid #145e96;
 }
-.note {
-  font-size:13px;
-  color:#39536c;
-}
+.note{font-size:13px;color:#39536c}
 
 /* FOOTER */
-footer {
+footer{
   background:#081c34;
   color:#e8f1fa;
   text-align:center;
   padding:30px 20px;
 }
-footer a {
+footer a{
   display:inline-block;
   background:#1b4c74;
   color:#fff0c5;
-  border-radius:7px;
-  padding:5px 11px;
+  border-radius:8px;
+  padding:6px 12px;
   text-decoration:none;
   margin:3px;
 }
-footer a:hover {background:#286c9f}
+footer a:hover{background:#286c9f}
 
-/* MOBILE */
-@media(max-width:750px) {
-  .hero-inner {
+@media(max-width:750px){
+  .hero-inner{
     grid-template-columns:1fr;
     text-align:center;
   }
-  .profile-photo {
-    max-width:270px;
-    height:320px;
-  }
-  .about-intro {
-    flex-direction:column;
-    text-align:center;
-  }
+  .profile-photo{max-width:270px;height:320px}
+  .about-intro{flex-direction:column;text-align:center}
 }
-@media(max-width:600px) {
-  header {padding:17px 5%}
-  .brand h1 {font-size:17px}
-  nav {gap:7px}
-  nav a {font-size:11px;padding:8px 10px}
-  .card {padding:20px}
-  .hero {padding:50px 6%}
+@media(max-width:600px){
+  header{padding:17px 5%}
+  .brand h1{font-size:17px}
+  nav{gap:7px}
+  nav a{font-size:11px;padding:8px 10px}
+  .card{padding:20px}
+  .hero{padding:50px 6%}
 }
 </style>
 </head>
 
 <body>
+
+<!-- Reusable WhatsApp icon -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute;width:0;height:0;overflow:hidden"
+     aria-hidden="true">
+  <symbol id="wa-icon" viewBox="0 0 32 32">
+    <path d="M16 .7A15.2 15.2 0 0 0 2.8 23.4L.7 31.3l8.1-2.1A15.3 15.3 0 1 0 16 .7zm0 27.8a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5a12.5 12.5 0 1 1 10.6 5.9zm6.9-9.4c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.8-2-1.1-2.7-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.8c.2.2 2.6 4 6.3 5.6.9.4 1.6.6 2.2.7.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.7-.5z"/>
+  </symbol>
+</svg>
 
 <!-- HEADER -->
 <header>
@@ -500,7 +512,10 @@ footer a:hover {background:#286c9f}
         <a class="btn green"
            href="https://wa.me/256753086633"
            target="_blank" rel="noopener">
-           WhatsApp Me
+          <svg class="whatsapp-icon" aria-hidden="true">
+            <use href="#wa-icon"></use>
+          </svg>
+          WhatsApp Me
         </a>
       </div>
 
@@ -566,7 +581,9 @@ footer a:hover {background:#286c9f}
       </p>
 
       <p><strong>Email:</strong>
-        <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a>
+        <a href="mailto:hamenyagerald@gmail.com">
+          hamenyagerald@gmail.com
+        </a>
       </p>
 
       <p><strong>LinkedIn:</strong>
@@ -588,6 +605,9 @@ footer a:hover {background:#286c9f}
       <a class="btn green"
          href="https://wa.me/256753086633"
          target="_blank" rel="noopener">
+        <svg class="whatsapp-icon" aria-hidden="true">
+          <use href="#wa-icon"></use>
+        </svg>
         Chat on WhatsApp
       </a>
 
@@ -607,6 +627,7 @@ footer a:hover {background:#286c9f}
 
   <main>
     <div class="grid">
+
       <div class="card">
         <span class="tag">In Progress</span>
         <h3>Ensign College</h3>
@@ -615,23 +636,24 @@ footer a:hover {background:#286c9f}
       </div>
 
       <div class="card">
-        <span class="tag">Completed</span>
+        <span class="tag completed">Completed</span>
         <h3>Kabale University</h3>
         <p>Bachelor's Degree in Information Technology</p>
         <p>2013–2016</p>
       </div>
 
       <div class="card">
-        <span class="tag">Completed</span>
+        <span class="tag completed">Completed</span>
         <h3>Uganda Martyrs University</h3>
         <p>Certificate in Information Technology</p>
       </div>
 
       <div class="card">
-        <span class="tag">Completed</span>
+        <span class="tag completed">Completed</span>
         <h3>BYU–Pathway Worldwide</h3>
         <p>PathwayConnect Certificate</p>
       </div>
+
     </div>
 
     <a class="back-home" href="#home">← Back to Home</a>
@@ -642,7 +664,7 @@ footer a:hover {background:#286c9f}
 <section id="certificates" class="view" hidden>
   <div class="banner">
     <h2>Professional Certifications</h2>
-    <p>My technical certifications, qualifications and issuing institutions</p>
+    <p>Technical certifications, qualifications and issuing institutions</p>
   </div>
 
   <main>
@@ -753,6 +775,7 @@ footer a:hover {background:#286c9f}
     <div>
       <a class="back-home" href="#home">← Back to Home</a>
     </div>
+
   </main>
 </section>
 
@@ -760,7 +783,7 @@ footer a:hover {background:#286c9f}
 <section id="experience" class="view" hidden>
   <div class="banner">
     <h2>Professional Experience</h2>
-    <p>My employment history and responsibilities</p>
+    <p>Employment history and professional responsibilities</p>
   </div>
 
   <main>
@@ -911,6 +934,9 @@ footer a:hover {background:#286c9f}
         <a class="btn green"
            href="https://wa.me/256753086633"
            target="_blank" rel="noopener">
+          <svg class="whatsapp-icon" aria-hidden="true">
+            <use href="#wa-icon"></use>
+          </svg>
           Chat on WhatsApp
         </a>
 
@@ -979,7 +1005,7 @@ footer a:hover {background:#286c9f}
 </footer>
 
 <script>
-const pages = [
+const pages=[
   "home",
   "about",
   "education",
@@ -989,27 +1015,27 @@ const pages = [
   "contact"
 ];
 
-function openPage() {
-  const requested = window.location.hash.slice(1).toLowerCase();
-  const selected = pages.includes(requested) ? requested : "home";
+function openPage(){
+  const requested=window.location.hash.slice(1).toLowerCase();
+  const selected=pages.includes(requested)?requested:"home";
 
-  document.querySelectorAll(".view").forEach(section => {
-    section.hidden = section.id !== selected;
+  document.querySelectorAll(".view").forEach(section=>{
+    section.hidden=section.id!==selected;
   });
 
-  document.querySelectorAll("nav a[data-target]").forEach(link => {
-    const active = link.dataset.target === selected;
-    link.classList.toggle("active", active);
+  document.querySelectorAll("nav a[data-target]").forEach(link=>{
+    const active=link.dataset.target===selected;
+    link.classList.toggle("active",active);
 
-    if (active) {
+    if(active){
       link.setAttribute("aria-current","page");
-    } else {
+    }else{
       link.removeAttribute("aria-current");
     }
   });
 
-  document.title =
-    (selected === "home" ? "Home" : selected.toUpperCase()) +
+  document.title=
+    (selected==="home"?"Home":selected.toUpperCase())+
     " | Hamenyimana Gerald";
 
   window.scrollTo(0,0);
@@ -1018,35 +1044,35 @@ function openPage() {
 window.addEventListener("hashchange",openPage);
 window.addEventListener("pageshow",openPage);
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click",function() {
-    const destination = this.getAttribute("href").slice(1);
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener("click",function(){
+    const destination=this.getAttribute("href").slice(1);
 
-    if (window.location.hash === "#" + destination) {
+    if(window.location.hash==="#"+destination){
       openPage();
     }
   });
 });
 
-document.getElementById("contactForm").addEventListener("submit",function(event) {
+document.getElementById("contactForm").addEventListener("submit",function(event){
   event.preventDefault();
 
-  const name = document.getElementById("senderName").value.trim();
-  const email = document.getElementById("senderEmail").value.trim();
-  const message = document.getElementById("senderMessage").value.trim();
+  const name=document.getElementById("senderName").value.trim();
+  const email=document.getElementById("senderEmail").value.trim();
+  const message=document.getElementById("senderMessage").value.trim();
 
-  if (!name || !email || !message) return;
+  if(!name||!email||!message)return;
 
-  const subject = encodeURIComponent("Portfolio Contact from " + name);
-  const body = encodeURIComponent(
-    "Name: " + name + "\n" +
-    "Email: " + email + "\n\n" +
-    "Message:\n" + message
+  const subject=encodeURIComponent("Portfolio Contact from "+name);
+  const body=encodeURIComponent(
+    "Name: "+name+"\n"+
+    "Email: "+email+"\n\n"+
+    "Message:\n"+message
   );
 
-  window.location.href =
-    "mailto:hamenyagerald@gmail.com?subject=" +
-    subject + "&body=" + body;
+  window.location.href=
+    "mailto:hamenyagerald@gmail.com?subject="+
+    subject+"&body="+body;
 });
 
 openPage();
@@ -1054,6 +1080,7 @@ openPage();
 
 </body>
 </html>
+
 
 
 
