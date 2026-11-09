@@ -4,205 +4,516 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hamenyimana Gerald | IT Portfolio</title>
+<meta name="description" content="Professional IT portfolio of Hamenyimana Gerald. Technical support, system administration, networking, and web projects.">
+<title>Hamenyimana Gerald | Professional IT Portfolio</title>
+
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;color:#21354a;background:#f4f7fb;line-height:1.7}
-header{background:#091d35;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-header strong{font-size:21px}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
-nav a:hover{color:#ffcc70}
-.hero{background:linear-gradient(125deg,#09243e,#1463a0);color:white;padding:95px 7%;text-align:center}
-.hero h1{font-size:clamp(35px,6vw,62px);margin:12px 0}
-.hero h1 span{color:#ffd078}
-.hero p{max-width:750px;margin:15px auto 28px;font-size:18px}
-.tag{color:#ffd078;text-transform:uppercase;letter-spacing:3px;font-weight:bold}
-.btn{display:inline-block;background:#ffd078;color:#10263c;text-decoration:none;padding:13px 24px;border-radius:9px;font-weight:bold;margin:6px}
-.btn.secondary{background:transparent;border:1px solid #dce9f5;color:white}
-main{max-width:1120px;margin:auto;padding:20px}
-section{padding:48px 0}
-h2{color:#0b3155;font-size:30px;margin-bottom:10px}
-.lead{color:#61748a}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:25px}
-.card{background:white;padding:25px;border-radius:15px;box-shadow:0 5px 20px #17334b12}
-.card h3{color:#135a90;margin:0 0 10px}
-.card p{margin:6px 0}
-.badge{display:inline-block;background:#e6f2fc;color:#155c91;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:bold}
-a{color:#1463a0}
-ul{padding-left:22px}
-li{margin-bottom:7px}
-footer{background:#091d35;color:#dce7f1;text-align:center;padding:32px 15px}
-footer a{color:#ffd078}
-@media(max-width:600px){header{justify-content:center;text-align:center}nav a{display:inline-block;margin:5px}.hero{padding:65px 6%}}
+:root {
+  --navy:#0a213b;
+  --blue:#135e96;
+  --gold:#ffcb72;
+  --green:#145a4d;
+  --light:#f3f6fa;
+  --text:#24374c;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:var(--text);
+  line-height:1.7;
+}
+a { color:var(--blue); }
+.site-header {
+  background:white;
+  border-bottom:1px solid #e0e8ef;
+  padding:18px 6%;
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:13px;
+  margin-bottom:18px;
+}
+.logo {
+  display:grid;
+  place-items:center;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:var(--navy);
+  color:var(--gold);
+  font-size:22px;
+  font-weight:800;
+}
+.brand h1 {
+  font-size:21px;
+  margin:0;
+  color:var(--navy);
+  line-height:1.3;
+}
+.brand p {
+  margin:0;
+  font-size:12px;
+  color:#66778a;
+  letter-spacing:1.5px;
+}
+nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 29px;
+  align-items:center;
+}
+nav a {
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:var(--green);
+  padding:7px 0;
+  border-bottom:3px solid transparent;
+}
+nav a:hover,
+nav a.active {
+  color:var(--blue);
+  border-bottom-color:var(--gold);
+}
+.hero {
+  background:linear-gradient(120deg,#09213a,#17649b);
+  color:white;
+  padding:90px 7%;
+  text-align:center;
+}
+.hero .eyebrow {
+  color:var(--gold);
+  letter-spacing:3px;
+  font-weight:bold;
+  font-size:13px;
+}
+.hero h2 {
+  font-size:clamp(35px,6vw,62px);
+  margin:15px 0;
+  color:white;
+}
+.hero h2 span { color:var(--gold); }
+.hero p {
+  max-width:760px;
+  margin:18px auto;
+  font-size:18px;
+}
+.btn {
+  display:inline-block;
+  padding:12px 23px;
+  background:var(--gold);
+  color:var(--navy);
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:8px 5px;
+}
+.btn:hover { background:#ffe1a8; }
+.btn.blue {
+  background:var(--blue);
+  color:white;
+}
+.page-banner {
+  background:linear-gradient(120deg,#0b2947,#17649b);
+  color:white;
+  text-align:center;
+  padding:58px 20px;
+}
+.page-banner h2 {
+  font-size:clamp(30px,5vw,48px);
+  margin:0;
+  color:white;
+}
+.page-banner p { margin:10px 0 0; }
+main {
+  max-width:1150px;
+  margin:auto;
+  padding:42px 22px 75px;
+  min-height:40vh;
+}
+h2 { color:var(--navy); }
+.section-title {
+  font-size:30px;
+  margin:0 0 10px;
+}
+.intro { color:#61758a; }
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:25px;
+}
+.card {
+  background:white;
+  border-radius:15px;
+  padding:27px;
+  box-shadow:0 6px 22px rgba(12,37,61,.07);
+}
+.card h3 {
+  color:var(--blue);
+  font-size:21px;
+  margin:0 0 12px;
+}
+.card p { margin:8px 0; }
+.tag {
+  display:inline-block;
+  padding:4px 12px;
+  border-radius:20px;
+  background:#e7f2fc;
+  color:#145b90;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+.cert-list {
+  display:grid;
+  gap:12px;
+  margin-top:20px;
+}
+.cert-item {
+  background:white;
+  border:1px solid #e0e9f1;
+  border-radius:11px;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+.cert-item strong { color:var(--navy); }
+.cert-item small { color:#66778a; }
+.cert-item a {
+  font-weight:bold;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.cert-item a:hover { text-decoration:underline; }
+.group-heading {
+  margin-top:40px;
+  color:var(--navy);
+  border-bottom:2px solid #dce7f0;
+  padding-bottom:9px;
+}
+.project-link {
+  display:inline-block;
+  background:var(--blue);
+  color:white;
+  padding:10px 17px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:14px;
+}
+.project-link:hover { background:#0a385c; }
+.page { display:none; }
+.page.active { display:block; }
+footer {
+  background:var(--navy);
+  color:#dbe5ef;
+  text-align:center;
+  padding:28px 18px;
+}
+footer a { color:var(--gold); }
+@media(max-width:650px) {
+  .site-header { padding:18px 5%; }
+  .brand h1 { font-size:17px; }
+  nav { gap:6px 17px; }
+  nav a { font-size:11px; }
+  .hero { padding:65px 6%; }
+  .cert-item { align-items:flex-start; flex-direction:column; }
+}
 </style>
 </head>
+
 <body>
-<header>
-<strong>HAMENYIMANA GERALD</strong>
-<nav>
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="certificates.html">Certificates</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+
+<header class="site-header">
+  <div class="brand">
+    <div class="logo">HG</div>
+    <div>
+      <h1>HAMENYIMANA GERALD</h1>
+      <p>PROFESSIONAL IT PORTFOLIO</p>
+    </div>
+  </div>
+
+  <nav aria-label="Main navigation">
+    <a href="#home" data-page="home">HOME</a>
+    <a href="#about" data-page="about">ABOUT ME</a>
+    <a href="#education" data-page="education">EDUCATION</a>
+    <a href="#certificates" data-page="certificates">CERTIFICATES</a>
+    <a href="#experience" data-page="experience">EXPERIENCE</a>
+    <a href="#projects" data-page="projects">PROJECTS</a>
+    <a href="#contact" data-page="contact">CONTACT</a>
+  </nav>
 </header>
 
-<div class="hero">
-<div class="tag">Professional IT Portfolio</div>
-<h1>Hamenyimana <span>Gerald</span></h1>
-<p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
-<p>Passionate about technology, problem-solving, reliable IT services, and supporting people through practical digital solutions.</p>
-<a class="btn" href="#projects">Explore My Projects</a>
-<a class="btn secondary" href="#contact">Contact Me</a>
-</div>
-
-<main>
-<section id="about">
-<h2>About Me</h2>
-<p class="lead">IT professional and lifelong learner based in Uganda.</p>
-<div class="card">
-<p>I have experience in information technology, data management, technical support, customer relations, and field operations. My educational background and professional certifications have strengthened my ability to troubleshoot problems, work with digital systems, support users, and contribute to effective organizational operations.</p>
-</div>
+<!-- HOME PAGE -->
+<section class="page" id="home">
+  <div class="hero">
+    <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
+    <h2>Hamenyimana <span>Gerald</span></h2>
+    <p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
+    <p>Passionate about solving technical problems, supporting users, and developing reliable digital solutions.</p>
+    <a class="btn" href="#projects">Explore My Projects</a>
+    <a class="btn" href="#certificates">My Certifications</a>
+  </div>
+  <main>
+    <h2 class="section-title">Welcome</h2>
+    <p class="intro">Explore my qualifications, professional experience, certifications, and IT projects using the navigation menu above.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Technical Support</h3>
+        <p>IT troubleshooting, user support, and computer systems.</p>
+      </div>
+      <div class="card">
+        <h3>Networking</h3>
+        <p>Networking fundamentals, configuration, and cybersecurity awareness.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Practical website projects and GitHub-based development.</p>
+      </div>
+    </div>
+  </main>
 </section>
 
-<section id="education">
-<h2>Education</h2>
-<div class="grid">
-<div class="card">
-<span class="badge">In Progress</span>
-<h3>Ensign College</h3>
-<p>Bachelor's-level studies in Information Technology and System Administration.</p>
-<p>Expected completion: next academic term.</p>
-</div>
-<div class="card">
-<h3>Kabale University</h3>
-<p>Bachelor's Degree in Information Technology</p>
-<p>2013–2016</p>
-</div>
-<div class="card">
-<h3>Uganda Martyrs University</h3>
-<p>Certificate in Information Technology</p>
-</div>
-<div class="card">
-<span class="badge">Completed</span>
-<h3>BYU–Pathway Worldwide</h3>
-<p>PathwayConnect Certificate</p>
-</div>
-</div>
+<!-- ABOUT PAGE -->
+<section class="page" id="about">
+  <div class="page-banner">
+    <h2>About Me</h2>
+    <p>My background, interests, and professional goals</p>
+  </div>
+  <main>
+    <div class="card">
+      <h3>Who I Am</h3>
+      <p>My name is Hamenyimana Gerald, an IT professional based in Uganda with experience in data management, customer service, field operations, reporting, and technical studies.</p>
+      <p>I have pursued training in technical support, system administration, networking, and cybersecurity. I enjoy solving problems, helping people use technology, and developing practical digital solutions.</p>
+      <p>My professional interests include IT help desk support, system administration, network support, customer care, and web technologies.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Technical Interests</h3>
+        <p>Computer troubleshooting, IT infrastructure, networking, and digital systems.</p>
+      </div>
+      <div class="card">
+        <h3>Professional Strengths</h3>
+        <p>Communication, reporting, teamwork, customer service, and attention to detail.</p>
+      </div>
+    </div>
+  </main>
 </section>
 
-<section id="certifications">
-<h2>Professional Certifications</h2>
-<p class="lead">Technical training, networking, cybersecurity, and professional development.</p>
-<div class="grid">
-<div class="card">
-<h3>Ensign College</h3>
-<ul>
-<li>Technical Support Engineer Certificate</li>
-<li>Professional Certificate</li>
-<li>IT Professional Certificate</li>
-<li>System Administration Certificate</li>
-</ul>
-</div>
-<div class="card">
-<h3>Cisco Certifications</h3>
-<ul>
-<li>Introduction to Cybersecurity</li>
-<li>Network Support and Security</li>
-<li>Network Technician Career Path</li>
-<li>Network Technician Career Path Exam</li>
-<li>Network Addressing and Basic Troubleshooting</li>
-<li>Networking Basics</li>
-<li>Networking Devices and Initial Configuration</li>
-</ul>
-</div>
-<div class="card">
-<h3>Uganda Police Force</h3>
-<p>Crime Prevention and Self Defence</p>
-</div>
-<div class="card">
-<h3>Additional Training</h3>
-<p>1 Minute Typing Test Credential</p>
-</div>
-</div>
+<!-- EDUCATION PAGE -->
+<section class="page" id="education">
+  <div class="page-banner">
+    <h2>Education</h2>
+    <p>My academic qualifications and continued learning</p>
+  </div>
+  <main>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">In Progress</span>
+        <h3>Ensign College</h3>
+        <p>Bachelor's-level studies in Information Technology and System Administration.</p>
+        <p>Expected completion: next academic term.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Completed</span>
+        <h3>Kabale University</h3>
+        <p>Bachelor's Degree in Information Technology</p>
+        <p>2013–2016</p>
+      </div>
+      <div class="card">
+        <span class="tag">Completed</span>
+        <h3>Uganda Martyrs University</h3>
+        <p>Certificate in Information Technology</p>
+      </div>
+      <div class="card">
+        <span class="tag">Completed</span>
+        <h3>BYU–Pathway Worldwide</h3>
+        <p>PathwayConnect Certificate</p>
+      </div>
+    </div>
+    <p><a href="#certificates">View my professional certificates</a></p>
+  </main>
 </section>
 
-<section id="experience">
-<h2>Professional Experience</h2>
-<div class="grid">
-<div class="card">
-<h3>Field Assistant</h3>
-<p><strong>Hands for an African Child</strong></p>
-<p>2022–Present</p>
-<p>Field coordination, documentation, communication, and operational support.</p>
-</div>
-<div class="card">
-<h3>Data Entry Clerk</h3>
-<p><strong>Kigezi Tea Factory</strong></p>
-<p>2018–2021</p>
-<p>Data processing, records management, and accurate reporting.</p>
-</div>
-<div class="card">
-<h3>Insurance Representative</h3>
-<p><strong>ICEA</strong></p>
-<p>Customer relations, client communication, and service support.</p>
-</div>
-<div class="card">
-<h3>Reports Manager Intern</h3>
-<p><strong>Line Upon Line Co.</strong></p>
-<p>Reporting, documentation, and organizational support.</p>
-</div>
-</div>
+<!-- CERTIFICATES PAGE -->
+<section class="page" id="certificates">
+  <div class="page-banner">
+    <h2>Certificates & Qualifications</h2>
+    <p>Technical training and professional development</p>
+  </div>
+  <main>
+    <p class="intro">Browse my qualifications below. Certificate documents and verification links will be added as they become available.</p>
+
+    <h2 class="group-heading">Ensign College</h2>
+    <div class="cert-list">
+      <div class="cert-item"><strong>Technical Support Engineer Certificate</strong><small>Completed</small></div>
+      <div class="cert-item"><strong>IT Professional Certificate</strong><small>Completed</small></div>
+      <div class="cert-item"><strong>System Administration Certificate</strong><small>Completed</small></div>
+      <div class="cert-item"><strong>Professional Certificate</strong><small>Completed</small></div>
+    </div>
+
+    <h2 class="group-heading">BYU–Pathway Worldwide</h2>
+    <div class="cert-list">
+      <div class="cert-item"><strong>PathwayConnect Certificate</strong><small>Completed</small></div>
+    </div>
+
+    <h2 class="group-heading">Cisco Networking & Cybersecurity</h2>
+    <div class="cert-list">
+      <div class="cert-item"><strong>Introduction to Cybersecurity</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Network Support and Security</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Network Technician Career Path</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Network Technician Career Path Exam</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Network Addressing and Basic Troubleshooting</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Networking Basics</strong><small>2025</small></div>
+      <div class="cert-item"><strong>Networking Devices and Initial Configuration</strong><small>2025</small></div>
+    </div>
+
+    <h2 class="group-heading">Other Professional Training</h2>
+    <div class="cert-list">
+      <div class="cert-item"><strong>Crime Prevention and Self Defence</strong><small>Uganda Police Force</small></div>
+      <div class="cert-item"><strong>1 Minute Typing Test</strong><small>Typing proficiency credential</small></div>
+    </div>
+
+    <p style="margin-top:30px">
+      <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/" target="_blank" rel="noopener">View my LinkedIn qualifications</a>
+    </p>
+  </main>
 </section>
 
-<section id="skills">
-<h2>Technical and Professional Skills</h2>
-<div class="grid">
-<div class="card"><h3>IT Support</h3><p>Technical troubleshooting, user support, system administration, and computer maintenance.</p></div>
-<div class="card"><h3>Networking</h3><p>Network fundamentals, addressing, device configuration, and cybersecurity awareness.</p></div>
-<div class="card"><h3>Digital Tools</h3><p>Microsoft Office, data management, GitHub, HTML, CSS, and web technologies.</p></div>
-<div class="card"><h3>Professional Skills</h3><p>Customer service, communication, teamwork, documentation, and reporting.</p></div>
-</div>
+<!-- EXPERIENCE PAGE -->
+<section class="page" id="experience">
+  <div class="page-banner">
+    <h2>Professional Experience</h2>
+    <p>My employment history and professional responsibilities</p>
+  </div>
+  <main>
+    <div class="grid">
+      <div class="card">
+        <h3>Field Assistant</h3>
+        <p><strong>Hands for an African Child</strong></p>
+        <p>2022–Present</p>
+        <p>Field coordination, communication, documentation, and operational support.</p>
+      </div>
+      <div class="card">
+        <h3>Data Entry Clerk</h3>
+        <p><strong>Kigezi Tea Factory</strong></p>
+        <p>2018–2021</p>
+        <p>Data entry, records management, processing, and reporting.</p>
+      </div>
+      <div class="card">
+        <h3>Insurance Representative</h3>
+        <p><strong>ICEA</strong></p>
+        <p>Client communication, customer relations, and service support.</p>
+      </div>
+      <div class="card">
+        <h3>Reports Manager Intern</h3>
+        <p><strong>Line Upon Line Co.</strong></p>
+        <p>Documentation, reporting, and organizational support.</p>
+      </div>
+    </div>
+  </main>
 </section>
 
-<section id="projects">
-<h2>Featured Projects</h2>
-<div class="grid">
-<div class="card">
-<h3>IT Capstone Portfolio</h3>
-<p>Portfolio showcasing practical IT learning and project work.</p>
-<a href="https://hamenyagerald.github.io/IT-Capstone-Finalization-Portfolio/" target="_blank" rel="noopener">View Project</a>
-</div>
-<div class="card">
-<h3>Open Hope Charities Website</h3>
-<p>Website project supporting an organization's digital presence.</p>
-<a href="https://hamenyagerald.github.io/Open_Hope_Charities_Organisation/" target="_blank" rel="noopener">View Project</a>
-</div>
-<div class="card">
-<h3>GitHub Projects</h3>
-<p>Explore my repositories and continuing technical development.</p>
-<a href="https://github.com/hamenyagerald" target="_blank" rel="noopener">View GitHub</a>
-</div>
-</div>
+<!-- PROJECTS PAGE -->
+<section class="page" id="projects">
+  <div class="page-banner">
+    <h2>My IT Projects</h2>
+    <p>Explore my practical technology and website projects</p>
+  </div>
+  <main>
+    <div class="grid">
+      <div class="card">
+        <h3>IT Capstone Portfolio</h3>
+        <p>My information technology capstone project, demonstrating practical learning and technical skills.</p>
+        <a class="project-link" href="https://hamenyagerald.github.io/IT-Capstone-Finalization-Portfolio/" target="_blank" rel="noopener">View Project ↗</a>
+      </div>
+      <div class="card">
+        <h3>Open Hope Charities Website</h3>
+        <p>A website project developed to support a charitable organization's digital presence.</p>
+        <a class="project-link" href="https://hamenyagerald.github.io/Open_Hope_Charities_Organisation/" target="_blank" rel="noopener">View Project ↗</a>
+      </div>
+      <div class="card">
+        <h3>My GitHub Repositories</h3>
+        <p>View additional projects, source code, and ongoing technical development.</p>
+        <a class="project-link" href="https://github.com/hamenyagerald" target="_blank" rel="noopener">Explore GitHub ↗</a>
+      </div>
+    </div>
+  </main>
 </section>
 
-<section id="contact">
-<h2>Get In Touch</h2>
-<div class="card">
-<p><strong>Email:</strong> <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/hamenyagerald">github.com/hamenyagerald</a></p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/">View My LinkedIn Profile</a></p>
-<p>Open to professional opportunities, collaboration, and continued learning in IT and technical support.</p>
-</div>
+<!-- CONTACT PAGE -->
+<section class="page" id="contact">
+  <div class="page-banner">
+    <h2>Contact Me</h2>
+    <p>Let's connect and explore professional opportunities</p>
+  </div>
+  <main>
+    <div class="card">
+      <h3>Get in Touch</h3>
+      <p><strong>Email:</strong> <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/hamenyagerald" target="_blank" rel="noopener">github.com/hamenyagerald</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/" target="_blank" rel="noopener">My LinkedIn Profile</a></p>
+      <p>I welcome opportunities in IT support, system administration, technical support, customer care, and related technology fields.</p>
+      <a class="btn blue" href="mailto:hamenyagerald@gmail.com">Send Me an Email</a>
+    </div>
+  </main>
 </section>
-</main>
 
 <footer>
-<p>© 2026 Hamenyimana Gerald. All rights reserved.</p>
-<p>Information Technology | Technical Support | Professional Development</p>
+  <p>© 2026 Hamenyimana Gerald. All rights reserved.</p>
+  <p>Information Technology | Technical Support | System Administration</p>
 </footer>
+
+<script>
+const validPages = [
+  "home","about","education","certificates",
+  "experience","projects","contact"
+];
+
+function showPage() {
+  let page = window.location.hash.replace("#","").toLowerCase();
+
+  if (!validPages.includes(page)) {
+    page = "home";
+  }
+
+  document.querySelectorAll(".page").forEach(section => {
+    section.classList.toggle("active", section.id === page);
+  });
+
+  document.querySelectorAll("nav a").forEach(link => {
+    const active = link.dataset.page === page;
+    link.classList.toggle("active", active);
+    if (active) {
+      link.setAttribute("aria-current","page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+
+  document.title =
+    page === "home"
+      ? "Hamenyimana Gerald | IT Portfolio"
+      : page.charAt(0).toUpperCase() + page.slice(1) +
+        " | Hamenyimana Gerald";
+
+  window.scrollTo(0,0);
+}
+
+window.addEventListener("hashchange",showPage);
+showPage();
+</script>
+
 </body>
 </html>
+
+
+
