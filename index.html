@@ -1,24 +1,34 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Professional IT portfolio of Hamenyimana Gerald">
+<meta name="description" content="Hamenyimana Gerald - Professional IT Portfolio">
 <title>Hamenyimana Gerald | IT Portfolio</title>
 
 <style>
+:root {
+  --navy:#0a213b;
+  --blue:#145e96;
+  --gold:#ffcb72;
+  --green:#145a4d;
+  --light:#f3f6fa;
+  --text:#24374b;
+}
 * {box-sizing:border-box}
 body {
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
-  background:#f3f6fa;
-  color:#24374b;
+  background:var(--light);
+  color:var(--text);
   line-height:1.7;
 }
 [hidden] {display:none!important}
-
+a {color:var(--blue)}
+button,input,textarea {font:inherit}
 header {
   background:white;
   padding:20px 6%;
@@ -31,20 +41,22 @@ header {
   margin-bottom:20px;
 }
 .logo {
-  background:#0a213b;
-  color:#ffcb72;
-  width:55px;
-  height:55px;
+  background:var(--navy);
+  color:var(--gold);
+  width:56px;
+  height:56px;
   border-radius:50%;
   display:grid;
   place-items:center;
   font-weight:bold;
   font-size:23px;
+  flex-shrink:0;
 }
 .brand h1 {
   font-size:22px;
-  color:#0a213b;
+  color:var(--navy);
   margin:0;
+  line-height:1.3;
 }
 .brand p {
   margin:0;
@@ -59,48 +71,84 @@ nav {
 }
 nav a {
   text-decoration:none;
-  color:#145a4d;
+  color:var(--green);
   font-weight:bold;
   font-size:13px;
   letter-spacing:1px;
   border-bottom:3px solid transparent;
-  padding-bottom:7px;
+  padding:7px 0;
 }
 nav a:hover,nav a.active {
-  color:#145e96;
-  border-bottom-color:#ffcb72;
+  color:var(--blue);
+  border-bottom-color:var(--gold);
 }
 .hero,.banner {
   background:linear-gradient(120deg,#09213a,#17649b);
   color:white;
-  text-align:center;
 }
-.hero {padding:90px 7%}
-.banner {padding:60px 7%}
+.hero {padding:65px 7%}
+.hero-inner {
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  align-items:center;
+  gap:45px;
+}
 .hero h2 {
-  font-size:clamp(36px,6vw,62px);
-  margin:10px 0;
+  font-size:clamp(35px,5vw,60px);
+  line-height:1.15;
+  color:white;
+  margin:15px 0;
 }
-.hero h2 span {color:#ffcb72}
-.hero p {
-  font-size:18px;
-  max-width:780px;
-  margin:18px auto;
+.hero h2 span {color:var(--gold)}
+.hero p {font-size:17px}
+.eyebrow {
+  color:var(--gold);
+  letter-spacing:2px;
+  font-weight:bold;
+  font-size:13px;
+}
+.profile-photo {
+  width:100%;
+  max-width:350px;
+  height:410px;
+  object-fit:cover;
+  object-position:center 25%;
+  border:5px solid var(--gold);
+  border-radius:20px;
+  box-shadow:0 15px 35px #0004;
+  display:block;
+  margin:auto;
+}
+.about-photo {
+  width:210px;
+  height:250px;
+  object-fit:cover;
+  object-position:center 25%;
+  border-radius:15px;
+  border:4px solid var(--gold);
+}
+.about-intro {
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+.banner {
+  text-align:center;
+  padding:55px 7%;
 }
 .banner h2 {
+  color:white;
   font-size:clamp(30px,5vw,46px);
   margin:0;
 }
-.banner p {margin:10px 0}
-.eyebrow {
-  color:#ffcb72;
-  letter-spacing:3px;
-  font-weight:bold;
-}
+.banner p {margin:8px 0}
 main {
   max-width:1100px;
   margin:auto;
   padding:45px 20px 75px;
+  min-height:45vh;
 }
 .grid {
   display:grid;
@@ -115,24 +163,30 @@ main {
   box-shadow:0 5px 20px #102e4812;
 }
 .card h3 {
-  color:#145e96;
+  color:var(--blue);
   margin:0 0 10px;
 }
 .card p {margin:8px 0}
 h2,h3 {color:#0a3154}
-.hero h2,.banner h2 {color:white}
-.btn {
+.btn,.back-home {
   display:inline-block;
-  background:#ffcb72;
-  color:#0a213b;
+  background:var(--gold);
+  color:var(--navy);
   text-decoration:none;
   padding:12px 22px;
+  border:0;
   border-radius:8px;
   font-weight:bold;
-  margin:8px 5px;
+  margin:8px 5px 8px 0;
+  cursor:pointer;
 }
-.btn.blue {background:#145e96;color:white}
-a {color:#145e96}
+.btn.blue {background:var(--blue);color:white}
+.btn:hover,.back-home:hover {filter:brightness(.93)}
+.back-home {
+  background:var(--navy);
+  color:white;
+  margin-top:30px;
+}
 .cert {
   background:white;
   padding:15px 20px;
@@ -145,24 +199,50 @@ a {color:#145e96}
 .tag {
   display:inline-block;
   background:#e5f1fb;
-  color:#145e96;
+  color:var(--blue);
   border-radius:20px;
   padding:4px 12px;
   font-size:12px;
   font-weight:bold;
 }
+.contact-form {
+  display:grid;
+  gap:15px;
+}
+.contact-form label {
+  font-weight:bold;
+  color:var(--navy);
+}
+.contact-form input,
+.contact-form textarea {
+  display:block;
+  width:100%;
+  padding:12px;
+  border:1px solid #cbd7e3;
+  border-radius:8px;
+  margin-top:5px;
+}
+.contact-form textarea {
+  min-height:140px;
+  resize:vertical;
+}
+.note {font-size:13px;color:#62788d}
 footer {
-  background:#0a213b;
+  background:var(--navy);
   color:white;
   padding:30px 20px;
   text-align:center;
 }
+@media(max-width:750px) {
+  .hero-inner {grid-template-columns:1fr;text-align:center}
+  .profile-photo {max-width:270px;height:320px}
+  .about-intro {flex-direction:column;text-align:center}
+}
 @media(max-width:600px) {
   header {padding:17px 5%}
   .brand h1 {font-size:17px}
-  nav {gap:10px 15px}
+  nav {gap:8px 15px}
   nav a {font-size:11px}
-  .hero {padding:65px 6%}
 }
 </style>
 </head>
@@ -177,7 +257,6 @@ footer {
       <p>PROFESSIONAL IT PORTFOLIO</p>
     </div>
   </div>
-
   <nav aria-label="Main navigation">
     <a href="#home" data-target="home">HOME</a>
     <a href="#about" data-target="about">ABOUT ME</a>
@@ -189,15 +268,20 @@ footer {
   </nav>
 </header>
 
-<!-- HOME: ONLY THIS IS VISIBLE AT FIRST -->
+<!-- HOME -->
 <section id="home" class="view">
   <div class="hero">
-    <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
-    <h2>Hamenyimana <span>Gerald</span></h2>
-    <p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
-    <p>Passionate about solving technical problems, supporting users, and developing reliable digital solutions.</p>
-    <a class="btn" href="#projects">Explore Projects</a>
-    <a class="btn" href="#contact">Contact Me</a>
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
+        <h2>Hamenyimana <span>Gerald</span></h2>
+        <p>Information Technology | Technical Support | System Administration | Networking | Customer Service</p>
+        <p>Passionate about solving technical problems, supporting users, and developing reliable digital solutions.</p>
+        <a class="btn" href="#projects">Explore Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      <img src="gera.jpeg" alt="Portrait of Hamenyimana Gerald" class="profile-photo">
+    </div>
   </div>
   <main>
     <h2>Welcome to My Professional Portfolio</h2>
@@ -205,15 +289,15 @@ footer {
     <div class="grid">
       <div class="card">
         <h3>Technical Support</h3>
-        <p>Computer troubleshooting and user support.</p>
+        <p>Computer troubleshooting, user support, and IT problem-solving.</p>
       </div>
       <div class="card">
         <h3>System Administration</h3>
-        <p>IT systems, networking, and technical operations.</p>
+        <p>Computer systems, networking, and technical operations.</p>
       </div>
       <div class="card">
         <h3>Web Projects</h3>
-        <p>Website development and practical technology solutions.</p>
+        <p>Website development and practical digital solutions.</p>
       </div>
     </div>
   </main>
@@ -226,11 +310,14 @@ footer {
     <p>My professional background and career interests</p>
   </div>
   <main>
-    <div class="card">
-      <h3>Who I Am</h3>
-      <p>My name is Hamenyimana Gerald. I am an IT professional based in Uganda, with experience in data management, customer service, reporting, and field operations.</p>
-      <p>My technical interests include IT help desk support, system administration, networking, cybersecurity, and web development.</p>
-      <p>I enjoy solving technical problems, learning new technologies, and helping organizations use digital tools effectively.</p>
+    <div class="card about-intro">
+      <img src="gera.jpeg" alt="Portrait of Hamenyimana Gerald" class="about-photo">
+      <div>
+        <h3>Who I Am</h3>
+        <p>My name is Hamenyimana Gerald. I am an IT professional based in Uganda, with experience in data management, customer service, reporting, and field operations.</p>
+        <p>My technical interests include IT help desk support, system administration, networking, cybersecurity, and web development.</p>
+        <p>I enjoy solving technical problems, learning new technologies, and helping organizations use digital tools effectively.</p>
+      </div>
     </div>
     <div class="grid">
       <div class="card">
@@ -242,6 +329,7 @@ footer {
         <p>Communication, customer support, teamwork, documentation, data entry, and reporting.</p>
       </div>
     </div>
+    <a class="back-home" href="#home">← Back to Home</a>
   </main>
 </section>
 
@@ -276,6 +364,7 @@ footer {
         <p>PathwayConnect Certificate</p>
       </div>
     </div>
+    <a class="back-home" href="#home">← Back to Home</a>
   </main>
 </section>
 
@@ -310,6 +399,7 @@ footer {
 
     <p>Individual certificate documents and verification links can be added when available.</p>
     <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/" target="_blank" rel="noopener">View My LinkedIn Profile</a>
+    <div><a class="back-home" href="#home">← Back to Home</a></div>
   </main>
 </section>
 
@@ -344,6 +434,7 @@ footer {
         <p>Reporting, documentation, and organizational support.</p>
       </div>
     </div>
+    <a class="back-home" href="#home">← Back to Home</a>
   </main>
 </section>
 
@@ -351,7 +442,7 @@ footer {
 <section id="projects" class="view" hidden>
   <div class="banner">
     <h2>My IT Projects</h2>
-    <p>Explore my completed technology projects</p>
+    <p>Explore my technology projects</p>
   </div>
   <main>
     <div class="grid">
@@ -371,6 +462,7 @@ footer {
         <a class="btn blue" href="https://github.com/hamenyagerald" target="_blank" rel="noopener">Explore GitHub</a>
       </div>
     </div>
+    <a class="back-home" href="#home">← Back to Home</a>
   </main>
 </section>
 
@@ -378,17 +470,35 @@ footer {
 <section id="contact" class="view" hidden>
   <div class="banner">
     <h2>Contact Me</h2>
-    <p>Let's connect and explore opportunities</p>
+    <p>Let's connect and explore professional opportunities</p>
   </div>
   <main>
-    <div class="card">
-      <h3>Get in Touch</h3>
-      <p><strong>Email:</strong> <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/hamenyagerald" target="_blank" rel="noopener">github.com/hamenyagerald</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/" target="_blank" rel="noopener">My LinkedIn Profile</a></p>
-      <p>I welcome opportunities in technical support, IT operations, system administration, and customer service.</p>
-      <a class="btn blue" href="mailto:hamenyagerald@gmail.com">Send Email</a>
+    <div class="grid">
+      <div class="card">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> <a href="mailto:hamenyagerald@gmail.com">hamenyagerald@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/hamenyagerald" target="_blank" rel="noopener">github.com/hamenyagerald</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamenyimana-gerald-109a91109/" target="_blank" rel="noopener">My LinkedIn Profile</a></p>
+        <p>I welcome opportunities in technical support, IT operations, system administration, and customer service.</p>
+      </div>
+      <div class="card">
+        <h3>Send Me a Message</h3>
+        <form class="contact-form" id="contactForm">
+          <label>Your Name
+            <input type="text" id="senderName" required placeholder="Enter your name">
+          </label>
+          <label>Your Email
+            <input type="email" id="senderEmail" required placeholder="Enter your email address">
+          </label>
+          <label>Your Message
+            <textarea id="senderMessage" required placeholder="Write your message here"></textarea>
+          </label>
+          <button type="submit" class="btn blue">Prepare Email</button>
+          <p class="note">This prepares a message in your email application. Press Send there to deliver it.</p>
+        </form>
+      </div>
     </div>
+    <a class="back-home" href="#home">← Back to Home</a>
   </main>
 </section>
 
@@ -399,29 +509,23 @@ footer {
 
 <script>
 const pages = [
-  "home",
-  "about",
-  "education",
-  "certificates",
-  "experience",
-  "projects",
-  "contact"
+  "home","about","education","certificates",
+  "experience","projects","contact"
 ];
 
 function openPage() {
-  const requested = location.hash.slice(1).toLowerCase();
+  const requested = window.location.hash.slice(1).toLowerCase();
   const selected = pages.includes(requested) ? requested : "home";
 
-  document.querySelectorAll(".view").forEach(function(section) {
+  document.querySelectorAll(".view").forEach(section => {
     section.hidden = section.id !== selected;
   });
 
-  document.querySelectorAll("nav a").forEach(function(link) {
+  document.querySelectorAll("nav a[data-target]").forEach(link => {
     const active = link.dataset.target === selected;
     link.classList.toggle("active", active);
-
     if (active) {
-      link.setAttribute("aria-current", "page");
+      link.setAttribute("aria-current","page");
     } else {
       link.removeAttribute("aria-current");
     }
@@ -431,15 +535,48 @@ function openPage() {
     (selected === "home" ? "Home" : selected.toUpperCase()) +
     " | Hamenyimana Gerald";
 
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
 }
 
-window.addEventListener("hashchange", openPage);
+window.addEventListener("hashchange",openPage);
+window.addEventListener("pageshow",openPage);
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click",function() {
+    const destination = this.getAttribute("href").slice(1);
+    if (window.location.hash === "#" + destination) {
+      openPage();
+    }
+  });
+});
+
+document.getElementById("contactForm").addEventListener("submit",function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("senderName").value.trim();
+  const email = document.getElementById("senderEmail").value.trim();
+  const message = document.getElementById("senderMessage").value.trim();
+
+  if (!name || !email || !message) return;
+
+  const subject = encodeURIComponent("Portfolio Contact from " + name);
+  const body = encodeURIComponent(
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n\n" +
+    "Message:\n" + message
+  );
+
+  window.location.href =
+    "mailto:hamenyagerald@gmail.com?subject=" +
+    subject + "&body=" + body;
+});
+
 openPage();
 </script>
 
 </body>
 </html>
+
 
 
 
